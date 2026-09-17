@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT etapa (nombre,
+                 longitud,
+                 fecha,
+                 tiempo_ganador,
+                 velocidad_media,
+                 desnivel,
+                 lugar_salida,
+                 lugar_meta,
+                 tipo,
+                 referencias,
+                 fotografias,
+                 videos,
+                 podcasts,
+                 salida,
+                 meta,
+                 hitos,
+                 clasificacion_etapa,
+                 clasificacion_general,
+                 clasificacion_equipos)>
+<!ATTLIST etapa numero CDATA #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+
+<!ELEMENT longitud (#PCDATA)>
+<!ATTLIST longitud unidad CDATA #REQUIRED>
+
+<!ELEMENT fecha (#PCDATA)>
+<!ATTLIST fecha formato CDATA #REQUIRED>
+
+<!ELEMENT tiempo_ganador (#PCDATA)>
+<!ATTLIST tiempo_ganador formato CDATA #REQUIRED>
+
+<!ELEMENT velocidad_media (#PCDATA)>
+<!ATTLIST velocidad_media unidad CDATA #REQUIRED>
+
+<!ELEMENT desnivel (#PCDATA)>
+<!ATTLIST desnivel unidad CDATA #REQUIRED>
+
+<!ELEMENT lugar_salida (#PCDATA)>
+<!ELEMENT lugar_meta (#PCDATA)>
+
+<!ELEMENT tipo (#PCDATA)>
+
+<!ELEMENT referencias (referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+
+<!ELEMENT fotografias (fotografia+)>
+<!ELEMENT fotografia (#PCDATA)>
+
+<!ELEMENT videos (video+)>
+<!ELEMENT video (#PCDATA)>
+
+<!ELEMENT podcasts (podcast+)>
+<!ELEMENT podcast (#PCDATA)>
+
+<!ELEMENT salida (coordenadas)>
+<!ELEMENT meta (coordenadas)>
+
+<!ELEMENT coordenadas (latitud, longitud, altitud)>
+
+<!ELEMENT latitud (#PCDATA)>
+<!ATTLIST latitud unidad CDATA #REQUIRED>
+
+<!ELEMENT altitud (#PCDATA)>
+<!ATTLIST altitud unidad CDATA #REQUIRED>
+
+<!ELEMENT hitos (hito+)>
+
+<!ELEMENT hito (coordenadas, distancia_salida)>
+<!ATTLIST hito
+          nombre CDATA #IMPLIED
+          tipo   CDATA #REQUIRED>
+
+<!ELEMENT distancia_salida (#PCDATA)>
+<!ATTLIST distancia_salida unidad CDATA #REQUIRED>
+
+<!ELEMENT clasificacion_etapa (clasificado, clasificado, clasificado)>
+
+<!ELEMENT clasificacion_general (clasificado, clasificado, clasificado)>
+
+<!ELEMENT clasificacion_equipos (clasificado, clasificado, clasificado)>
+
+<!ELEMENT clasificado (nombre, diferencia_tiempo?)>
+<!ATTLIST clasificado posicion CDATA #REQUIRED>
+
+<!ELEMENT diferencia_tiempo (#PCDATA)>
+<!ATTLIST diferencia_tiempo formato CDATA #REQUIRED>

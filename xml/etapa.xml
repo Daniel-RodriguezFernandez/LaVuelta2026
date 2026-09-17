@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE etapa SYSTEM "etapa.dtd">
+<etapa numero="7">
+    <nombre>Vall D’Alba a Aramón Valdelinares</nombre>
+    <longitud unidad="km">149.8</longitud>
+    <fecha formato="yyyy-MM-dd">2026-08-28</fecha>
+    <tiempo_ganador formato="hh:mm:ss">03:49:47</tiempo_ganador>
+    <velocidad_media unidad="km/h">38.85</velocidad_media>
+    <desnivel unidad="m">3685</desnivel>
+    <lugar_salida>Vall D’Alba</lugar_salida>
+    <lugar_meta>Aramón Valdelinares</lugar_meta>
+    <tipo>Montaña</tipo>
+    <referencias>
+        <referencia>https://www.lavuelta.es/en/stage-7</referencia>
+        <referencia>https://www.lavuelta.es/en/stage-7/summary</referencia>
+        <referencia>https://www.lavuelta.es/en/stage-7/results</referencia>
+    </referencias>
+    <fotografias>
+        <fotografia>xmlfotografia1.jpg</fotografia>
+    </fotografias>
+    <videos>
+        <video>xmlvideo1.mp4</video>
+    </videos>
+    <podcasts>
+        <podcast>xmlpodcast1.mp3</podcast>
+    </podcasts>
+    <salida>
+        <coordenadas>
+            <latitud unidad="grados">40.13262</latitud>
+            <longitud unidad="grados">-0.01085</longitud>
+            <altitud unidad="m">251</altitud>
+        </coordenadas>
+    </salida>
+    <meta>
+        <coordenadas>
+            <latitud unidad="grados">40.37806</latitud>
+            <longitud unidad="grados">-0.63177</longitud>
+            <altitud unidad="m">1961</altitud>
+        </coordenadas>
+    </meta>
+    <hitos>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.12048</latitud>
+                <longitud unidad="grados">-0.00833</longitud>
+                <altitud unidad="m">273</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">1.40</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.11969</latitud>
+                <longitud unidad="grados">-0.05394</longitud>
+                <altitud unidad="m">257</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">5.47</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.16728</latitud>
+                <longitud unidad="grados">-0.06407</longitud>
+                <altitud unidad="m">253</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">10.97</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.15368</latitud>
+                <longitud unidad="grados">-0.13786</longitud>
+                <altitud unidad="m">281</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">17.57</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.15683</latitud>
+                <longitud unidad="grados">-0.17701</longitud>
+                <altitud unidad="m">391</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">21.52</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.14149</latitud>
+                <longitud unidad="grados">-0.18586</longitud>
+                <altitud unidad="m">458</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">24.14</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.14290</latitud>
+                <longitud unidad="grados">-0.17703</longitud>
+                <altitud unidad="m">467</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">24.98</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.12043</latitud>
+                <longitud unidad="grados">-0.17226</longitud>
+                <altitud unidad="m">456</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">28.46</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.12041</latitud>
+                <longitud unidad="grados">-0.19478</longitud>
+                <altitud unidad="m">428</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">31.44</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.10581</latitud>
+                <longitud unidad="grados">-0.20783</longitud>
+                <altitud unidad="m">327</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">33.58</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.12827</latitud>
+                <longitud unidad="grados">-0.26073</longitud>
+                <altitud unidad="m">418</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">39.30</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.12571</latitud>
+                <longitud unidad="grados">-0.27181</longitud>
+                <altitud unidad="m">460</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">40.60</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.13257</latitud>
+                <longitud unidad="grados">-0.27126</longitud>
+                <altitud unidad="m">503</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">41.49</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.13663</latitud>
+                <longitud unidad="grados">-0.28148</longitud>
+                <altitud unidad="m">594</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">43.38</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.13240</latitud>
+                <longitud unidad="grados">-0.28428</longitud>
+                <altitud unidad="m">614</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">43.98</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.14345</latitud>
+                <longitud unidad="grados">-0.31563</longitud>
+                <altitud unidad="m">805</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">48.10</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.14001</latitud>
+                <longitud unidad="grados">-0.31267</longitud>
+                <altitud unidad="m">825</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">48.68</distancia_salida>
+        </hito>
+        <hito nombre="Puerto El Remolcador" tipo="puerto_2a_categoria">
+            <coordenadas>
+                <latitud unidad="grados">40.13976</latitud>
+                <longitud unidad="grados">-0.34626</longitud>
+                <altitud unidad="m">964</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">52.20</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.14161</latitud>
+                <longitud unidad="grados">-0.36577</longitud>
+                <altitud unidad="m">927</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">54.42</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.12683</latitud>
+                <longitud unidad="grados">-0.37580</longitud>
+                <altitud unidad="m">813</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">56.82</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.12906</latitud>
+                <longitud unidad="grados">-0.39384</longitud>
+                <altitud unidad="m">704</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">58.69</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.13636</latitud>
+                <longitud unidad="grados">-0.39244</longitud>
+                <altitud unidad="m">581</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">60.76</distancia_salida>
+        </hito>
+        <hito nombre="Alto de Zucaina" tipo="puerto_3a_categoria">
+            <coordenadas>
+                <latitud unidad="grados">40.13078</latitud>
+                <longitud unidad="grados">-0.41698</longitud>
+                <altitud unidad="m">800</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">66.50</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.12099</latitud>
+                <longitud unidad="grados">-0.44551</longitud>
+                <altitud unidad="m">801</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">69.89</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.12471</latitud>
+                <longitud unidad="grados">-0.45493</longitud>
+                <altitud unidad="m">777</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">71.08</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.11693</latitud>
+                <longitud unidad="grados">-0.45315</longitud>
+                <altitud unidad="m">816</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">72.32</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.11178</latitud>
+                <longitud unidad="grados">-0.46512</longitud>
+                <altitud unidad="m">850</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">73.76</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.11548</latitud>
+                <longitud unidad="grados">-0.49356</longitud>
+                <altitud unidad="m">790</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">76.36</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.08037</latitud>
+                <longitud unidad="grados">-0.50627</longitud>
+                <altitud unidad="m">494</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">81.25</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.07176</latitud>
+                <longitud unidad="grados">-0.51878</longitud>
+                <altitud unidad="m">501</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">83.02</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.07467</latitud>
+                <longitud unidad="grados">-0.53753</longitud>
+                <altitud unidad="m">502</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">84.95</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.08516</latitud>
+                <longitud unidad="grados">-0.54146</longitud>
+                <altitud unidad="m">533</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">86.26</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.08629</latitud>
+                <longitud unidad="grados">-0.56566</longitud>
+                <altitud unidad="m">607</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">89.15</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.10018</latitud>
+                <longitud unidad="grados">-0.57392</longitud>
+                <altitud unidad="m">671</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">92.05</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.09924</latitud>
+                <longitud unidad="grados">-0.58935</longitud>
+                <altitud unidad="m">653</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">93.67</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.11823</latitud>
+                <longitud unidad="grados">-0.61017</longitud>
+                <altitud unidad="m">603</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">96.79</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.13442</latitud>
+                <longitud unidad="grados">-0.61554</longitud>
+                <altitud unidad="m">627</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">99.03</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.13470</latitud>
+                <longitud unidad="grados">-0.62669</longitud>
+                <altitud unidad="m">698</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">100.29</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.16322</latitud>
+                <longitud unidad="grados">-0.61873</longitud>
+                <altitud unidad="m">959</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">103.98</distancia_salida>
+        </hito>
+        <hito nombre="Puerto de Fuente de Rubielos" tipo="puerto_3a_categoria">
+            <coordenadas>
+                <latitud unidad="grados">40.16934</latitud>
+                <longitud unidad="grados">-0.62298</longitud>
+                <altitud unidad="m">972</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">104.90</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.17898</latitud>
+                <longitud unidad="grados">-0.62418</longitud>
+                <altitud unidad="m">1000</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">106.05</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.18679</latitud>
+                <longitud unidad="grados">-0.65097</longitud>
+                <altitud unidad="m">979</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">108.89</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.19360</latitud>
+                <longitud unidad="grados">-0.64489</longitud>
+                <altitud unidad="m">942</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">109.96</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.19065</latitud>
+                <longitud unidad="grados">-0.65475</longitud>
+                <altitud unidad="m">943</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">110.94</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.20757</latitud>
+                <longitud unidad="grados">-0.68768</longitud>
+                <altitud unidad="m">982</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">114.36</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.22652</latitud>
+                <longitud unidad="grados">-0.69331</longitud>
+                <altitud unidad="m">1023</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">116.68</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.22934</latitud>
+                <longitud unidad="grados">-0.72140</longitud>
+                <altitud unidad="m">1119</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">119.21</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.25111</latitud>
+                <longitud unidad="grados">-0.75423</longitud>
+                <altitud unidad="m">1036</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">123.01</distancia_salida>
+        </hito>
+        <hito nombre="Mora de Rubielos" tipo="sprint_intermedio">
+            <coordenadas>
+                <latitud unidad="grados">40.25330</latitud>
+                <longitud unidad="grados">-0.75309</longitud>
+                <altitud unidad="m">1045</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">123.30</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.27415</latitud>
+                <longitud unidad="grados">-0.74256</longitud>
+                <altitud unidad="m">1089</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">125.96</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.29680</latitud>
+                <longitud unidad="grados">-0.71642</longitud>
+                <altitud unidad="m">1314</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">129.86</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.31630</latitud>
+                <longitud unidad="grados">-0.72291</longitud>
+                <altitud unidad="m">1387</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">132.32</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.32819</latitud>
+                <longitud unidad="grados">-0.71317</longitud>
+                <altitud unidad="m">1412</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">134.42</distancia_salida>
+        </hito>
+        <hito nombre="Puerto de San Rafael" tipo="puerto_2a_categoria">
+            <coordenadas>
+                <latitud unidad="grados">40.34218</latitud>
+                <longitud unidad="grados">-0.71129</longitud>
+                <altitud unidad="m">1534</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">136.30</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.35153</latitud>
+                <longitud unidad="grados">-0.71367</longitud>
+                <altitud unidad="m">1515</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">137.52</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.35487</latitud>
+                <longitud unidad="grados">-0.70025</longitud>
+                <altitud unidad="m">1423</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">138.83</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.36589</latitud>
+                <longitud unidad="grados">-0.70638</longitud>
+                <altitud unidad="m">1384</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">140.31</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.37487</latitud>
+                <longitud unidad="grados">-0.68717</longitud>
+                <altitud unidad="m">1470</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">142.45</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.36366</latitud>
+                <longitud unidad="grados">-0.64214</longitud>
+                <altitud unidad="m">1826</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">147.47</distancia_salida>
+        </hito>
+        <hito tipo="punto_anonimo">
+            <coordenadas>
+                <latitud unidad="grados">40.37286</latitud>
+                <longitud unidad="grados">-0.62765</longitud>
+                <altitud unidad="m">1965</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">149.30</distancia_salida>
+        </hito>
+        <hito nombre="Aramon Valdelinares" tipo="puerto_1a_categoria">
+            <coordenadas>
+                <latitud unidad="grados">40.37631</latitud>
+                <longitud unidad="grados">-0.63016</longitud>
+                <altitud unidad="m">1958</altitud>
+            </coordenadas>
+            <distancia_salida unidad="km">149.80</distancia_salida>
+        </hito>
+    </hitos>
+
+    <clasificacion_etapa>
+        <clasificado posicion="1">
+            <nombre>Andreas Leknessund</nombre>
+        </clasificado>
+        <clasificado posicion="2">
+            <nombre>Tobias Halland Johannessen</nombre>
+            <diferencia_tiempo formato="mm:ss">00:34</diferencia_tiempo>
+        </clasificado>
+        <clasificado posicion="3">
+            <nombre>Wout van Aert</nombre>
+            <diferencia_tiempo formato="mm:ss">00:47</diferencia_tiempo>
+        </clasificado>
+    </clasificacion_etapa>
+        
+    <clasificacion_general>
+       <clasificado posicion="1">
+            <nombre>Tadej Pogačar</nombre>
+        </clasificado>
+        <clasificado posicion="2">
+            <nombre>Enric Mas</nombre>
+            <diferencia_tiempo formato="mm:ss">03:50</diferencia_tiempo>
+        </clasificado>
+        <clasificado posicion="3">
+            <nombre>Primož Roglič</nombre>
+            <diferencia_tiempo formato="mm:ss">04:50</diferencia_tiempo>
+        </clasificado>
+    </clasificacion_general>   
+
+    <clasificacion_equipos>
+        <clasificado posicion="1">
+            <nombre>Decathlon-CMA CGM</nombre>
+        </clasificado>
+        <clasificado posicion="2">
+            <nombre>UAE Team Emirates-XRG</nombre>
+            <diferencia_tiempo formato="mm:ss">12:04</diferencia_tiempo>
+        </clasificado>
+        <clasificado posicion="3">
+            <nombre>Visma-Lease a Bike</nombre>
+            <diferencia_tiempo formato="mm:ss">20:35</diferencia_tiempo>
+        </clasificado>
+    </clasificacion_equipos>
+
+</etapa>
