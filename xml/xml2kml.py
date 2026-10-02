@@ -8,7 +8,6 @@ Genera el archivo etapa.kml (planimetría de la etapa) a partir de etapaEsquema.
 - Marca en rojo salida y meta, en verde los puertos de montaña,
   en azul los sprints intermedios y en amarillo los puntos anónimos
 
-@version 1.0 01/Octubre/2026
 @author: Daniel Rodríguez Fernández. Universidad de Oviedo
 """
 
