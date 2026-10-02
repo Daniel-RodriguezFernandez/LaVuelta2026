@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Vall D’Alba a Aramón Valdelinares</name>
+    <Style id="estiloSalidaMeta">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>1.4</scale>
+      </IconStyle>
+    </Style>
+    <Style id="estiloPuerto">
+      <IconStyle>
+        <color>ff00ff00</color>
+        <scale>1.2</scale>
+      </IconStyle>
+    </Style>
+    <Style id="estiloSprint">
+      <IconStyle>
+        <color>ffff0000</color>
+        <scale>1.2</scale>
+      </IconStyle>
+    </Style>
+    <Style id="estiloAnonimo">
+      <IconStyle>
+        <color>ff00ffff</color>
+        <scale>0.5</scale>
+      </IconStyle>
+    </Style>
+    <Style id="estiloRuta">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Placemark>
+      <name>Recorrido</name>
+      <styleUrl>#estiloRuta</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>-0.01085,40.13262,251.0
+-0.00833,40.12048,273.0
+-0.05394,40.11969,257.0
+-0.06407,40.16728,253.0
+-0.13786,40.15368,281.0
+-0.17703,40.1429,467.0
+-0.19478,40.12041,428.0
+-0.20783,40.10581,327.0
+-0.26073,40.12827,418.0
+-0.31563,40.14345,805.0
+-0.34626,40.13976,964.0
+-0.36577,40.14161,927.0
+-0.39244,40.13636,581.0
+-0.41698,40.13078,800.0
+-0.45493,40.12471,777.0
+-0.46512,40.11178,850.0
+-0.49356,40.11548,790.0
+-0.50627,40.08037,494.0
+-0.53753,40.07467,502.0
+-0.57392,40.10018,671.0
+-0.61017,40.11823,603.0
+-0.61554,40.13442,627.0
+-0.61873,40.16322,959.0
+-0.62298,40.16934,972.0
+-0.62418,40.17898,1000.0
+-0.65475,40.19065,943.0
+-0.69331,40.22652,1023.0
+-0.7214,40.22934,1119.0
+-0.75309,40.2533,1045.0
+-0.74256,40.27415,1089.0
+-0.71642,40.2968,1314.0
+-0.71317,40.32819,1412.0
+-0.71129,40.34218,1534.0
+-0.70638,40.36589,1384.0
+-0.68717,40.37487,1470.0
+-0.64214,40.36366,1826.0
+-0.63016,40.37631,1958.0
+-0.63177,40.37806,1961.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Salida: Vall D’Alba</name>
+      <description>Km 0.00 - Altitud 251 m</description>
+      <styleUrl>#estiloSalidaMeta</styleUrl>
+      <Point>
+        <coordinates>-0.01085,40.13262,251.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meta: Aramón Valdelinares</name>
+      <description>Km 149.80 - Altitud 1961 m</description>
+      <styleUrl>#estiloSalidaMeta</styleUrl>
+      <Point>
+        <coordinates>-0.63177,40.37806,1961.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 1.40 - Altitud 273 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.00833,40.12048,273.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 5.47 - Altitud 257 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.05394,40.11969,257.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 10.97 - Altitud 253 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.06407,40.16728,253.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 17.57 - Altitud 281 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.13786,40.15368,281.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 24.98 - Altitud 467 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.17703,40.1429,467.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 31.44 - Altitud 428 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.19478,40.12041,428.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 33.58 - Altitud 327 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.20783,40.10581,327.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 39.30 - Altitud 418 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.26073,40.12827,418.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 48.10 - Altitud 805 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.31563,40.14345,805.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Puerto El Remolcador</name>
+      <description>Km 52.20 - Altitud 964 m</description>
+      <styleUrl>#estiloPuerto</styleUrl>
+      <Point>
+        <coordinates>-0.34626,40.13976,964.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 54.42 - Altitud 927 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.36577,40.14161,927.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 60.76 - Altitud 581 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.39244,40.13636,581.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Alto de Zucaina</name>
+      <description>Km 66.50 - Altitud 800 m</description>
+      <styleUrl>#estiloPuerto</styleUrl>
+      <Point>
+        <coordinates>-0.41698,40.13078,800.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 71.08 - Altitud 777 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.45493,40.12471,777.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 73.76 - Altitud 850 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.46512,40.11178,850.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 76.36 - Altitud 790 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.49356,40.11548,790.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 81.25 - Altitud 494 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.50627,40.08037,494.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 84.95 - Altitud 502 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.53753,40.07467,502.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 92.05 - Altitud 671 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.57392,40.10018,671.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 96.79 - Altitud 603 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.61017,40.11823,603.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 99.03 - Altitud 627 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.61554,40.13442,627.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 103.98 - Altitud 959 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.61873,40.16322,959.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Puerto de Fuente de Rubielos</name>
+      <description>Km 104.90 - Altitud 972 m</description>
+      <styleUrl>#estiloPuerto</styleUrl>
+      <Point>
+        <coordinates>-0.62298,40.16934,972.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 106.05 - Altitud 1000 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.62418,40.17898,1000.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 110.94 - Altitud 943 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.65475,40.19065,943.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 116.68 - Altitud 1023 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.69331,40.22652,1023.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 119.21 - Altitud 1119 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.7214,40.22934,1119.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mora de Rubielos</name>
+      <description>Km 123.30 - Altitud 1045 m</description>
+      <styleUrl>#estiloSprint</styleUrl>
+      <Point>
+        <coordinates>-0.75309,40.2533,1045.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 125.96 - Altitud 1089 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.74256,40.27415,1089.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 129.86 - Altitud 1314 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.71642,40.2968,1314.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 134.42 - Altitud 1412 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.71317,40.32819,1412.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Puerto de San Rafael</name>
+      <description>Km 136.30 - Altitud 1534 m</description>
+      <styleUrl>#estiloPuerto</styleUrl>
+      <Point>
+        <coordinates>-0.71129,40.34218,1534.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 140.31 - Altitud 1384 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.70638,40.36589,1384.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 142.45 - Altitud 1470 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.68717,40.37487,1470.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Km 147.47 - Altitud 1826 m</description>
+      <styleUrl>#estiloAnonimo</styleUrl>
+      <Point>
+        <coordinates>-0.64214,40.36366,1826.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Aramon Valdelinares</name>
+      <description>Km 149.80 - Altitud 1958 m</description>
+      <styleUrl>#estiloPuerto</styleUrl>
+      <Point>
+        <coordinates>-0.63016,40.37631,1958.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
