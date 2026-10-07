@@ -1,126 +1,123 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1200" height="800" viewBox="0 0 1200 800">
-  <title>Etapa 7. Vall D’Alba a Aramón Valdelinares</title>
+  <title>Etapa 13. Almuñécar a Loja</title>
   <rect x="0" y="0" width="1200" height="800" fill="#ffffff" stroke="none" />
-  <text x="80" y="40" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="24" text-anchor="start" font-weight="bold">Etapa 7. Vall D’Alba a Aramón Valdelinares</text>
-  <text x="80" y="66" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="start">Altimetría · 149.8 km · Desnivel acumulado 3685 m</text>
-  <line x1="80" y1="667.5" x2="1150" y2="667.5" stroke="#dddddd" stroke-width="1" />
-  <text x="70" y="671.5" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">250 m</text>
-  <line x1="80" y1="625" x2="1150" y2="625" stroke="#dddddd" stroke-width="1" />
-  <text x="70" y="629" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">500 m</text>
-  <line x1="80" y1="582.5" x2="1150" y2="582.5" stroke="#dddddd" stroke-width="1" />
-  <text x="70" y="586.5" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">750 m</text>
+  <text x="80" y="40" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="24" text-anchor="start" font-weight="bold">Etapa 13. Almuñécar a Loja</text>
+  <text x="80" y="66" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="start">Altimetría · 192.8 km · Desnivel acumulado 3404 m</text>
+  <line x1="80" y1="653.33" x2="1150" y2="653.33" stroke="#dddddd" stroke-width="1" />
+  <text x="70" y="657.33" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">250 m</text>
+  <line x1="80" y1="596.67" x2="1150" y2="596.67" stroke="#dddddd" stroke-width="1" />
+  <text x="70" y="600.67" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">500 m</text>
   <line x1="80" y1="540" x2="1150" y2="540" stroke="#dddddd" stroke-width="1" />
-  <text x="70" y="544" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">1000 m</text>
-  <line x1="80" y1="497.5" x2="1150" y2="497.5" stroke="#dddddd" stroke-width="1" />
-  <text x="70" y="501.5" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">1250 m</text>
-  <line x1="80" y1="455" x2="1150" y2="455" stroke="#dddddd" stroke-width="1" />
-  <text x="70" y="459" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">1500 m</text>
-  <line x1="80" y1="412.5" x2="1150" y2="412.5" stroke="#dddddd" stroke-width="1" />
-  <text x="70" y="416.5" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">1750 m</text>
+  <text x="70" y="544" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">750 m</text>
+  <line x1="80" y1="483.33" x2="1150" y2="483.33" stroke="#dddddd" stroke-width="1" />
+  <text x="70" y="487.33" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">1000 m</text>
+  <line x1="80" y1="426.67" x2="1150" y2="426.67" stroke="#dddddd" stroke-width="1" />
+  <text x="70" y="430.67" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">1250 m</text>
   <line x1="80" y1="370" x2="1150" y2="370" stroke="#dddddd" stroke-width="1" />
-  <text x="70" y="374" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">2000 m</text>
-  <line x1="151.43" y1="710" x2="151.43" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="222.86" y1="710" x2="222.86" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="294.29" y1="710" x2="294.29" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="365.71" y1="710" x2="365.71" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="437.14" y1="710" x2="437.14" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="508.57" y1="710" x2="508.57" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="580" y1="710" x2="580" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="651.43" y1="710" x2="651.43" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="722.86" y1="710" x2="722.86" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="794.29" y1="710" x2="794.29" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="865.71" y1="710" x2="865.71" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="937.14" y1="710" x2="937.14" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="1008.57" y1="710" x2="1008.57" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="1080" y1="710" x2="1080" y2="370" stroke="#dddddd" stroke-width="1" />
-  <polygon points="80,667.33 90,663.59 119.07,666.31 158.36,666.99 205.5,662.23 258.43,630.61 304.57,637.24 319.86,654.41 360.71,638.94 423.57,573.15 452.86,546.12 468.71,552.41 514,611.23 555,574 587.71,577.91 606.86,565.5 625.43,575.7 660.36,626.02 686.79,624.66 737.5,595.93 771.36,607.49 787.36,603.41 822.71,546.97 829.29,544.76 837.5,540 872.43,549.69 913.43,536.09 931.5,519.77 960.71,532.35 979.71,524.87 1007.57,486.62 1040.14,469.96 1053.57,449.22 1082.21,474.72 1097.5,460.1 1133.36,399.58 1150,377.14 1150,376.63 1150,710 80,710" fill="#f5d76e" stroke="none" stroke-width="0" stroke-linejoin="round" />
-  <polyline points="80,667.33 90,663.59 119.07,666.31 158.36,666.99 205.5,662.23 258.43,630.61 304.57,637.24 319.86,654.41 360.71,638.94 423.57,573.15 452.86,546.12 468.71,552.41 514,611.23 555,574 587.71,577.91 606.86,565.5 625.43,575.7 660.36,626.02 686.79,624.66 737.5,595.93 771.36,607.49 787.36,603.41 822.71,546.97 829.29,544.76 837.5,540 872.43,549.69 913.43,536.09 931.5,519.77 960.71,532.35 979.71,524.87 1007.57,486.62 1040.14,469.96 1053.57,449.22 1082.21,474.72 1097.5,460.1 1133.36,399.58 1150,377.14 1150,376.63" fill="none" stroke="#8a6d1d" stroke-width="2.5" stroke-linejoin="round" />
+  <text x="70" y="374" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">1500 m</text>
+  <line x1="135.5" y1="710" x2="135.5" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="191" y1="710" x2="191" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="246.49" y1="710" x2="246.49" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="301.99" y1="710" x2="301.99" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="357.49" y1="710" x2="357.49" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="412.99" y1="710" x2="412.99" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="468.49" y1="710" x2="468.49" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="523.98" y1="710" x2="523.98" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="579.48" y1="710" x2="579.48" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="634.98" y1="710" x2="634.98" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="690.48" y1="710" x2="690.48" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="745.98" y1="710" x2="745.98" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="801.47" y1="710" x2="801.47" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="856.97" y1="710" x2="856.97" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="912.47" y1="710" x2="912.47" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="967.97" y1="710" x2="967.97" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="1023.46" y1="710" x2="1023.46" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="1078.96" y1="710" x2="1078.96" y2="370" stroke="#dddddd" stroke-width="1" />
+  <line x1="1134.46" y1="710" x2="1134.46" y2="370" stroke="#dddddd" stroke-width="1" />
+  <polygon points="80,690.51 104.92,705.47 138.49,693.68 156.37,686.43 195.21,635.88 205.2,603.47 253.15,523.68 276.8,548.84 303.43,588.51 322.8,541.59 352.72,513.93 378.52,542.49 388.12,540.45 409.38,543.63 441.57,518.01 499.34,451.15 542.85,404 576.76,475.63 615.44,516.65 643.86,514.39 695.92,475.17 714.79,509.4 727.66,521.64 748.69,542.27 788.1,550.2 819.95,569.69 835.1,580.8 851.98,594.17 884.16,584.2 942.44,472.45 977.79,542.04 1008.87,557.45 1042.78,582.84 1089.34,601.43 1140.57,606.41 1150,597.12 1150,710 80,710" fill="#f5d76e" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <polyline points="80,690.51 104.92,705.47 138.49,693.68 156.37,686.43 195.21,635.88 205.2,603.47 253.15,523.68 276.8,548.84 303.43,588.51 322.8,541.59 352.72,513.93 378.52,542.49 388.12,540.45 409.38,543.63 441.57,518.01 499.34,451.15 542.85,404 576.76,475.63 615.44,516.65 643.86,514.39 695.92,475.17 714.79,509.4 727.66,521.64 748.69,542.27 788.1,550.2 819.95,569.69 835.1,580.8 851.98,594.17 884.16,584.2 942.44,472.45 977.79,542.04 1008.87,557.45 1042.78,582.84 1089.34,601.43 1140.57,606.41 1150,597.12" fill="none" stroke="#8a6d1d" stroke-width="2.5" stroke-linejoin="round" />
   <line x1="80" y1="710" x2="1150" y2="710" stroke="#444444" stroke-width="1.5" />
   <line x1="80" y1="710" x2="80" y2="370" stroke="#444444" stroke-width="1.5" />
   <line x1="80" y1="710" x2="80" y2="716" stroke="#444444" stroke-width="1.5" />
   <text x="80" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">0</text>
-  <line x1="151.43" y1="710" x2="151.43" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="151.43" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">10</text>
-  <line x1="222.86" y1="710" x2="222.86" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="222.86" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">20</text>
-  <line x1="294.29" y1="710" x2="294.29" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="294.29" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">30</text>
-  <line x1="365.71" y1="710" x2="365.71" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="365.71" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">40</text>
-  <line x1="437.14" y1="710" x2="437.14" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="437.14" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">50</text>
-  <line x1="508.57" y1="710" x2="508.57" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="508.57" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">60</text>
-  <line x1="580" y1="710" x2="580" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="580" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">70</text>
-  <line x1="651.43" y1="710" x2="651.43" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="651.43" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">80</text>
-  <line x1="722.86" y1="710" x2="722.86" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="722.86" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">90</text>
-  <line x1="794.29" y1="710" x2="794.29" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="794.29" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">100</text>
-  <line x1="865.71" y1="710" x2="865.71" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="865.71" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">110</text>
-  <line x1="937.14" y1="710" x2="937.14" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="937.14" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">120</text>
-  <line x1="1008.57" y1="710" x2="1008.57" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="1008.57" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">130</text>
-  <line x1="1080" y1="710" x2="1080" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="1080" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">140</text>
+  <line x1="135.5" y1="710" x2="135.5" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="135.5" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">10</text>
+  <line x1="191" y1="710" x2="191" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="191" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">20</text>
+  <line x1="246.49" y1="710" x2="246.49" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="246.49" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">30</text>
+  <line x1="301.99" y1="710" x2="301.99" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="301.99" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">40</text>
+  <line x1="357.49" y1="710" x2="357.49" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="357.49" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">50</text>
+  <line x1="412.99" y1="710" x2="412.99" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="412.99" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">60</text>
+  <line x1="468.49" y1="710" x2="468.49" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="468.49" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">70</text>
+  <line x1="523.98" y1="710" x2="523.98" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="523.98" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">80</text>
+  <line x1="579.48" y1="710" x2="579.48" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="579.48" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">90</text>
+  <line x1="634.98" y1="710" x2="634.98" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="634.98" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">100</text>
+  <line x1="690.48" y1="710" x2="690.48" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="690.48" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">110</text>
+  <line x1="745.98" y1="710" x2="745.98" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="745.98" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">120</text>
+  <line x1="801.47" y1="710" x2="801.47" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="801.47" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">130</text>
+  <line x1="856.97" y1="710" x2="856.97" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="856.97" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">140</text>
+  <line x1="912.47" y1="710" x2="912.47" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="912.47" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">150</text>
+  <line x1="967.97" y1="710" x2="967.97" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="967.97" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">160</text>
+  <line x1="1023.46" y1="710" x2="1023.46" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="1023.46" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">170</text>
+  <line x1="1078.96" y1="710" x2="1078.96" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="1078.96" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">180</text>
+  <line x1="1134.46" y1="710" x2="1134.46" y2="716" stroke="#444444" stroke-width="1.5" />
+  <text x="1134.46" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">190</text>
   <text x="1150" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="start">km</text>
-  <line x1="452.86" y1="546.12" x2="452.86" y2="358" stroke="#e67e22" stroke-width="1" stroke-dasharray="4 3" />
-  <circle cx="452.86" cy="546.12" r="6" fill="#e67e22" stroke="#ffffff" stroke-width="2" />
-  <text x="449.86" y="358" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" transform="rotate(-90 449.86 358)">
-    <tspan fill="#e67e22" font-weight="bold">2ª Cat.  </tspan>
-    <tspan font-weight="bold">Puerto El Remolcador</tspan>
-  </text>
-  <text x="464.86" y="358" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" transform="rotate(-90 464.86 358)">964 m · km 52.2</text>
-  <line x1="555" y1="574" x2="555" y2="358" stroke="#27ae60" stroke-width="1" stroke-dasharray="4 3" />
-  <circle cx="555" cy="574" r="6" fill="#27ae60" stroke="#ffffff" stroke-width="2" />
-  <text x="552" y="358" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" transform="rotate(-90 552 358)">
-    <tspan fill="#27ae60" font-weight="bold">3ª Cat.  </tspan>
-    <tspan font-weight="bold">Alto de Zucaina</tspan>
-  </text>
-  <text x="567" y="358" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" transform="rotate(-90 567 358)">800 m · km 66.5</text>
-  <line x1="829.29" y1="544.76" x2="829.29" y2="358" stroke="#27ae60" stroke-width="1" stroke-dasharray="4 3" />
-  <circle cx="829.29" cy="544.76" r="6" fill="#27ae60" stroke="#ffffff" stroke-width="2" />
-  <text x="826.29" y="358" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" transform="rotate(-90 826.29 358)">
-    <tspan fill="#27ae60" font-weight="bold">3ª Cat.  </tspan>
-    <tspan font-weight="bold">Puerto de Fuente de Rubielos</tspan>
-  </text>
-  <text x="841.29" y="358" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" transform="rotate(-90 841.29 358)">972 m · km 104.9</text>
-  <line x1="960.71" y1="532.35" x2="960.71" y2="358" stroke="#1f6fd1" stroke-width="1" stroke-dasharray="4 3" />
-  <circle cx="960.71" cy="532.35" r="6" fill="#1f6fd1" stroke="#ffffff" stroke-width="2" />
-  <text x="957.71" y="358" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" transform="rotate(-90 957.71 358)">
-    <tspan fill="#1f6fd1" font-weight="bold">Sprint  </tspan>
-    <tspan font-weight="bold">Mora de Rubielos</tspan>
-  </text>
-  <text x="972.71" y="358" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" transform="rotate(-90 972.71 358)">1045 m · km 123.3</text>
-  <line x1="1053.57" y1="449.22" x2="1053.57" y2="358" stroke="#e67e22" stroke-width="1" stroke-dasharray="4 3" />
-  <circle cx="1053.57" cy="449.22" r="6" fill="#e67e22" stroke="#ffffff" stroke-width="2" />
-  <text x="1050.57" y="358" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" transform="rotate(-90 1050.57 358)">
-    <tspan fill="#e67e22" font-weight="bold">2ª Cat.  </tspan>
-    <tspan font-weight="bold">Puerto de San Rafael</tspan>
-  </text>
-  <text x="1065.57" y="358" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" transform="rotate(-90 1065.57 358)">1534 m · km 136.3</text>
-  <line x1="1150" y1="377.14" x2="1150" y2="358" stroke="#c0392b" stroke-width="1" stroke-dasharray="4 3" />
-  <circle cx="1150" cy="377.14" r="6" fill="#c0392b" stroke="#ffffff" stroke-width="2" />
-  <text x="1147" y="358" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" transform="rotate(-90 1147 358)">
+  <line x1="253.15" y1="523.68" x2="253.15" y2="358" stroke="#c0392b" stroke-width="1" stroke-dasharray="4 3" />
+  <circle cx="253.15" cy="523.68" r="6" fill="#c0392b" stroke="#ffffff" stroke-width="2" />
+  <text x="250.15" y="358" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" transform="rotate(-90 250.15 358)">
     <tspan fill="#c0392b" font-weight="bold">1ª Cat.  </tspan>
-    <tspan font-weight="bold">Aramon Valdelinares</tspan>
+    <tspan font-weight="bold">Alto de la Venta de la Cebada</tspan>
   </text>
-  <text x="1162" y="358" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" transform="rotate(-90 1162 358)">1958 m · km 149.8</text>
-  <circle cx="80" cy="667.33" r="7" fill="#d0021b" stroke="#ffffff" stroke-width="2" />
+  <text x="265.15" y="358" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" transform="rotate(-90 265.15 358)">822 m · km 31.2</text>
+  <line x1="542.85" y1="404" x2="542.85" y2="358" stroke="#27ae60" stroke-width="1" stroke-dasharray="4 3" />
+  <circle cx="542.85" cy="404" r="6" fill="#27ae60" stroke="#ffffff" stroke-width="2" />
+  <text x="539.85" y="358" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" transform="rotate(-90 539.85 358)">
+    <tspan fill="#27ae60" font-weight="bold">3ª Cat.  </tspan>
+    <tspan font-weight="bold">Alto del Legionario</tspan>
+  </text>
+  <text x="554.85" y="358" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" transform="rotate(-90 554.85 358)">1350 m · km 83.4</text>
+  <line x1="884.16" y1="584.2" x2="884.16" y2="358" stroke="#1f6fd1" stroke-width="1" stroke-dasharray="4 3" />
+  <circle cx="884.16" cy="584.2" r="6" fill="#1f6fd1" stroke="#ffffff" stroke-width="2" />
+  <text x="881.16" y="358" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" transform="rotate(-90 881.16 358)">
+    <tspan fill="#1f6fd1" font-weight="bold">Sprint  </tspan>
+    <tspan font-weight="bold">Tocón</tspan>
+  </text>
+  <text x="896.16" y="358" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" transform="rotate(-90 896.16 358)">555 m · km 144.9</text>
+  <line x1="942.44" y1="472.45" x2="942.44" y2="358" stroke="#e67e22" stroke-width="1" stroke-dasharray="4 3" />
+  <circle cx="942.44" cy="472.45" r="6" fill="#e67e22" stroke="#ffffff" stroke-width="2" />
+  <text x="939.44" y="358" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" transform="rotate(-90 939.44 358)">
+    <tspan fill="#e67e22" font-weight="bold">2ª Cat.  </tspan>
+    <tspan font-weight="bold">Puerto de Granada</tspan>
+  </text>
+  <text x="954.44" y="358" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" transform="rotate(-90 954.44 358)">1048 m · km 155.4</text>
+  <circle cx="80" cy="690.51" r="7" fill="#d0021b" stroke="#ffffff" stroke-width="2" />
   <text x="80" y="758" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="start">
     <tspan fill="#d0021b" font-weight="bold">SALIDA: </tspan>
-    <tspan font-weight="bold">Vall D’Alba</tspan>
+    <tspan font-weight="bold">Almuñécar</tspan>
   </text>
-  <text x="80" y="778" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="start">251 m · km 0.0</text>
-  <circle cx="1150" cy="376.63" r="7" fill="#d0021b" stroke="#ffffff" stroke-width="2" />
+  <text x="80" y="778" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="start">86 m · km 0.0</text>
+  <circle cx="1150" cy="597.12" r="7" fill="#d0021b" stroke="#ffffff" stroke-width="2" />
   <text x="1150" y="758" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="end">
     <tspan fill="#d0021b" font-weight="bold">META: </tspan>
-    <tspan font-weight="bold">Aramón Valdelinares</tspan>
+    <tspan font-weight="bold">Loja</tspan>
   </text>
-  <text x="1150" y="778" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">1961 m · km 149.8</text>
+  <text x="1150" y="778" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">498 m · km 192.8</text>
 </svg>
