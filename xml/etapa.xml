@@ -258,7 +258,7 @@
             </coordenadas>
             <distancia_salida unidad="km">139.10</distancia_salida>
         </hito>
-        <hito nombre="Tocón" tipo="sprint_intermedio">
+        <hito nombre="Tocón" tipo="sprint_intermedio" bonificado="true">
             <coordenadas>
                 <latitud unidad="grados">37.23812</latitud>
                 <longitud unidad="grados">-3.96354</longitud>

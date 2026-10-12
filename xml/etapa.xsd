@@ -168,6 +168,7 @@
 			</xs:sequence>
 			<xs:attribute name="nombre" type="tipoTexto" use="optional" />
 			<xs:attribute name="tipo" type="tipoHito" use="required" />
+			<xs:attribute name="bonificado" type="xs:boolean" use="optional" />
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="distancia_salida">

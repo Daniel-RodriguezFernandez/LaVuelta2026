@@ -70,8 +70,9 @@
 
 <!ELEMENT hito (coordenadas, distancia_salida)>
 <!ATTLIST hito
-          nombre CDATA #IMPLIED
-          tipo   CDATA #REQUIRED>
+          nombre     CDATA          #IMPLIED
+          tipo       CDATA          #REQUIRED
+          bonificado (true | false) #IMPLIED>
 
 <!ELEMENT distancia_salida (#PCDATA)>
 <!ATTLIST distancia_salida unidad CDATA #REQUIRED>
