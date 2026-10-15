@@ -1,15 +1,66 @@
-/* ***************************************/
-/*             LaVuelta2026              */
-/*          Estilos generales            */
-/* ***************************************/
-/*    DATOS ESTUDIANTE                   */
-/* --------------------------------------*/
-/*  Nombre y Apellidos:                  */
-/*  Correo electrónico (uniovi):         */
-/*  Grupo de laboratorio:                */
-/* ***************************************/
+/* ****************************************************/
+/*             LaVuelta2026                           */
+/*          Estilos generales                         */
+/* ****************************************************/
+/*    DATOS ESTUDIANTE                                */
+/* ---------------------------------------------------*/
+/*  Nombre y Apellidos: Daniel Rodríguez Fernández    */
+/*  Correo electrónico (uniovi): UO293655@uniovi.es   */
+/*  Grupo de laboratorio:                             */
+/* ****************************************************/
+
+/* Gama cromática
+   Color principal ROJO #9B0E1E se puede combinar con:
+       o Color blanco     - Contraste de 8.48:1 (AAA)
+       o Color secundario - Contraste de 7.78:1 (AAA)
+   Color secundario CREMA #FFF4E0 se puede combinar con:
+       o Color negro      - Contraste de 19.27:1 (AAA)
+       o Color principal  - Contraste de 7.78:1 (AAA)
+   Color blanco #FFFFFF
+   Color negro #000000
+*/
+
+/* Especificidad: 010 */
+:root {
+    --color-principal: #9B0E1E;
+    --color-secundario: #FFF4E0;
+    --color-negro: #000000;
+    --color-blanco: #FFFFFF;
+}
 
 /* Especificidad: 001 */
 body {
     font-family: Verdana, "Trebuchet MS", sans-serif;
+    color: var(--color-negro);
+    background-color: var(--color-blanco);
+}
+
+/* Especificidad: 001 */
+header, footer {
+    color: var(--color-blanco);
+    background-color: var(--color-principal);
+}
+
+/* Especificidad: 002 */
+header a, footer a {
+    color: var(--color-blanco);
+    background-color: var(--color-principal);
+}
+
+/* Especificidad: 001 */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-principal);
+    background-color: var(--color-blanco);
+}
+
+/* Especificidad: 002 */
+header h1 {
+    color: var(--color-blanco);
+    background-color: var(--color-principal);
+}
+
+/* Especificidad: 001 */
+th {
+    color: var(--color-negro);
+    background-color: var(--color-secundario);
 }
