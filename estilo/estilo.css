@@ -10,20 +10,20 @@
 /* ****************************************************/
 
 /* Gama cromática
-   Color principal ROJO #9B0E1E se puede combinar con:
-       o Color blanco     - Contraste de 8.48:1 (AAA)
-       o Color secundario - Contraste de 7.78:1 (AAA)
-   Color secundario CREMA #FFF4E0 se puede combinar con:
-       o Color negro      - Contraste de 19.27:1 (AAA)
-       o Color principal  - Contraste de 7.78:1 (AAA)
+   Color principal AZUL MARINO #1B3A6B se puede combinar con:
+       o Color blanco     - Contraste de 11.27:1 (AAA)
+       o Color secundario - Contraste de 9.87:1 (AAA)
+   Color secundario AZUL HIELO #E8F1FB se puede combinar con:
+       o Color negro      - Contraste de 18.41:1 (AAA)
+       o Color principal  - Contraste de 9.87:1 (AAA)
    Color blanco #FFFFFF
    Color negro #000000
 */
 
 /* Especificidad: 010 */
 :root {
-    --color-principal: #9B0E1E;
-    --color-secundario: #FFF4E0;
+    --color-principal: #1B3A6B;
+    --color-secundario: #E8F1FB;
     --color-negro: #000000;
     --color-blanco: #FFFFFF;
 }
