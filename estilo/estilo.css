@@ -9,5 +9,7 @@
 /*  Grupo de laboratorio:                */
 /* ***************************************/
 
-
-
+/* Especificidad: 001 */
+body {
+    font-family: Verdana, "Trebuchet MS", sans-serif;
+}
