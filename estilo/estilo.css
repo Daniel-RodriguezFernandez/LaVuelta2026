@@ -45,6 +45,7 @@ header, footer {
 header a, footer a {
     color: var(--color-blanco);
     background-color: var(--color-principal);
+    text-decoration: none;
 }
 
 /* Especificidad: 001 */
