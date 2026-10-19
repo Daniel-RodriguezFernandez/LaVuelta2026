@@ -5,9 +5,13 @@ Genera el archivo altimetria.svg (perfil altimétrico de la etapa) a partir de e
 
 - Lee el árbol DOM con xml.etree.ElementTree
 - Obtiene los datos mediante expresiones XPath
-- Dibuja el perfil de la etapa (distancia desde la salida frente a altitud)
-  con una rejilla de referencia y etiquetas para salida, meta, puertos de
-  montaña y sprints intermedios, a semejanza del libro de ruta oficial
+- Dibuja la altimetría a semejanza del libro de ruta de la Vuelta:
+    * perfil como polilínea cerrada rellena de rojo
+    * escala horizontal en km y escala vertical en metros
+    * nombres de la salida y de la meta
+    * nombres en vertical de los hitos con sus iconos (S, M, puertos, SP, B)
+    * nombres en vertical de los puntos anónimos que tienen nombre
+    * desnivel positivo de la etapa al pie
 
 @author: Daniel Rodríguez Fernández. Universidad de Oviedo
 """
@@ -15,6 +19,21 @@ Genera el archivo altimetria.svg (perfil altimétrico de la etapa) a partir de e
 import math
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
+
+
+def formatoKm(valor):
+    """
+    Punto kilométrico al estilo del libro de ruta: coma decimal y sin ',0' (155,4 · 136)
+    """
+    texto = '{:.1f}'.format(valor).replace('.', ',')
+    return texto[:-2] if texto.endswith(',0') else texto
+
+
+def formatoMetros(valor):
+    """
+    Altitud o desnivel con punto de millares (1.348)
+    """
+    return '{:,.0f}'.format(valor).replace(',', '.')
 
 
 @dataclass(frozen=True)
@@ -26,12 +45,8 @@ class PuntoPerfil(object):
     tipo: str
     altitud: float
     distanciaSalida: float
-
-    def etiqueta(self):
-        """
-        Texto con la altitud y el punto kilométrico del punto
-        """
-        return '{:.0f} m · km {:.1f}'.format(self.altitud, self.distanciaSalida)
+    tieneNombre: bool = True
+    bonificado: bool = False
 
 
 class LectorEtapa(object):
@@ -71,7 +86,7 @@ class LectorEtapa(object):
 
     def desnivelEtapa(self):
         """
-        Desnivel acumulado de la etapa en metros
+        Desnivel positivo acumulado de la etapa en metros
         """
         return float(self.__texto(self.raiz, 'uo:desnivel'))
 
@@ -92,14 +107,14 @@ class LectorEtapa(object):
 
     def hitos(self):
         """
-        Todos los hitos de la etapa en el orden del recorrido
+        Todos los hitos de la etapa (con y sin nombre): dan forma al perfil
         """
         return [self.__crearHito(hito)
                 for hito in self.raiz.findall('uo:hitos/uo:hito', self.ESPACIO_NOMBRES)]
 
     def hitosConNombre(self):
         """
-        Hitos destacados (puertos y sprints): los que tienen atributo nombre
+        Hitos que se rotulan: puertos, sprints y puntos anónimos que tienen nombre
         """
         return [self.__crearHito(hito)
                 for hito in self.raiz.findall('uo:hitos/uo:hito[@nombre]', self.ESPACIO_NOMBRES)]
@@ -108,23 +123,30 @@ class LectorEtapa(object):
         """
         Convierte un elemento <hito> del árbol DOM en un PuntoPerfil
         """
-        tipo = hito.get('tipo')
-        return PuntoPerfil(nombre=hito.get('nombre', tipo.replace('_', ' ').capitalize()),
+        tipo = hito.get('tipo', 'punto_anonimo')
+        return PuntoPerfil(nombre=hito.get('nombre', ''),
                            tipo=tipo,
                            altitud=float(self.__texto(hito, 'uo:coordenadas/uo:altitud')),
-                           distanciaSalida=float(self.__texto(hito, 'uo:distancia_salida')))
+                           distanciaSalida=float(self.__texto(hito, 'uo:distancia_salida')),
+                           tieneNombre=hito.get('nombre') is not None,
+                           bonificado=hito.get('bonificado', 'false').strip().lower()
+                           in ('true', '1'))
 
     def __texto(self, elemento, expresion):
         """
         Contenido textual del nodo seleccionado por la expresión XPath
         """
-        return elemento.findtext(expresion, namespaces=self.ESPACIO_NOMBRES).strip()
+        texto = elemento.findtext(expresion, namespaces=self.ESPACIO_NOMBRES)
+        if texto is None:
+            raise SystemExit('Falta el elemento ' + expresion + ' en el archivo XML')
+        return texto.strip()
 
 
 class Svg(object):
     """
-    Genera archivos SVG con rectángulos, líneas, polígonos, círculos y textos
+    Genera archivos SVG con rectángulos, líneas, polígonos, rutas y textos
     """
+    FUENTE = "'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif"
 
     def __init__(self, ancho, alto):
         """
@@ -144,21 +166,21 @@ class Svg(object):
         """
         Añade un rectángulo
         """
-        ET.SubElement(self.raiz, 'rect', x=self.__num(x), y=self.__num(y),
-                      width=self.__num(ancho), height=self.__num(alto),
+        ET.SubElement(self.raiz, 'rect', x=self.num(x), y=self.num(y),
+                      width=self.num(ancho), height=self.num(alto),
                       fill=relleno, stroke=trazo)
 
-    def addLinea(self, x1, y1, x2, y2, color, ancho, discontinua=None):
+    def addLinea(self, x1, y1, x2, y2, color, ancho, opacidad=None):
         """
-        Añade una línea recta; si se indica, con trazo discontinuo
+        Añade una línea recta
         """
-        linea = ET.SubElement(self.raiz, 'line', x1=self.__num(x1), y1=self.__num(y1),
-                              x2=self.__num(x2), y2=self.__num(y2), stroke=color)
+        linea = ET.SubElement(self.raiz, 'line', x1=self.num(x1), y1=self.num(y1),
+                              x2=self.num(x2), y2=self.num(y2), stroke=color)
         linea.set('stroke-width', str(ancho))
-        if discontinua is not None:
-            linea.set('stroke-dasharray', discontinua)
+        if opacidad is not None:
+            linea.set('stroke-opacity', str(opacidad))
 
-    def addPoligono(self, puntos, relleno, trazo, ancho):
+    def addPoligono(self, puntos, relleno, trazo='none', ancho=0):
         """
         Añade un polígono cerrado a partir de una lista de pares (x, y)
         """
@@ -176,41 +198,41 @@ class Svg(object):
         polilinea.set('stroke-width', str(ancho))
         polilinea.set('stroke-linejoin', 'round')
 
-    def addCirculo(self, cx, cy, radio, relleno, trazo='#ffffff'):
+    def addRuta(self, d, relleno, trazo='none', ancho=0):
         """
-        Añade un círculo
+        Añade un elemento <path> (se usa para el escudo de los iconos)
         """
-        circulo = ET.SubElement(self.raiz, 'circle', cx=self.__num(cx), cy=self.__num(cy),
-                                r=str(radio), fill=relleno, stroke=trazo)
-        circulo.set('stroke-width', '2')
+        ruta = ET.SubElement(self.raiz, 'path', d=d, fill=relleno, stroke=trazo)
+        ruta.set('stroke-width', str(ancho))
 
     def addTexto(self, x, y, texto, tamano, color='#222222', anclaje='start',
                  negrita=False, rotacion=0):
         """
         Añade un texto, opcionalmente en negrita y girado sobre su punto de anclaje
         """
-        elemento = ET.SubElement(self.raiz, 'text', x=self.__num(x), y=self.__num(y),
+        elemento = ET.SubElement(self.raiz, 'text', x=self.num(x), y=self.num(y),
                                  fill=color)
-        elemento.set('font-family', 'Arial, Helvetica, sans-serif')
+        elemento.set('font-family', self.FUENTE)
         elemento.set('font-size', str(tamano))
         elemento.set('text-anchor', anclaje)
         if negrita:
             elemento.set('font-weight', 'bold')
         if rotacion:
             elemento.set('transform', 'rotate({} {} {})'.format(
-                rotacion, self.__num(x), self.__num(y)))
+                rotacion, self.num(x), self.num(y)))
         elemento.text = texto
         return elemento
 
-    def addTramoTexto(self, elementoTexto, texto, color=None, negrita=False):
+    def addTramoTexto(self, elementoTexto, texto, negrita=False, x=None, dy=None):
         """
-        Añade un <tspan> a continuación del contenido de un texto existente
+        Añade un <tspan> al texto; con x y dy empieza una línea nueva
         """
         tramo = ET.SubElement(elementoTexto, 'tspan')
-        if color is not None:
-            tramo.set('fill', color)
-        if negrita:
-            tramo.set('font-weight', 'bold')
+        if x is not None:
+            tramo.set('x', self.num(x))
+        if dy is not None:
+            tramo.set('dy', self.num(dy))
+        tramo.set('font-weight', 'bold' if negrita else 'normal')
         tramo.text = texto
 
     def escribir(self, nombreArchivoSVG):
@@ -219,15 +241,22 @@ class Svg(object):
         """
         arbol = ET.ElementTree(self.raiz)
         ET.indent(arbol)
+        # la indentación dentro de <text> se vería como espacios entre los <tspan>
+        for texto in self.raiz.iter('text'):
+            if len(texto):
+                texto.text = None
+                for tramo in texto:
+                    tramo.tail = None
         arbol.write(nombreArchivoSVG, encoding='utf-8', xml_declaration=True)
 
     def __puntos(self, puntos):
         """
         Lista de pares (x, y) en el formato del atributo points
         """
-        return ' '.join('{},{}'.format(self.__num(x), self.__num(y)) for x, y in puntos)
+        return ' '.join('{},{}'.format(self.num(x), self.num(y)) for x, y in puntos)
 
-    def __num(self, valor):
+    @staticmethod
+    def num(valor):
         """
         Número con dos decimales como máximo
         """
@@ -236,38 +265,51 @@ class Svg(object):
 
 class EstilosAltimetria(object):
     """
-    Colores y textos asociados a cada tipo de punto del perfil
+    Colores e iconos asociados a cada tipo de punto, como en el libro de ruta
     """
-    # tipo: (color del marcador, texto de la categoría)
-    TIPOS = {
-        'salida':              ('#d0021b', 'Salida'),
-        'meta':                ('#d0021b', 'Meta'),
-        'puerto_especial':     ('#4a0d0d', 'Cat. Especial'),
-        'puerto_1a_categoria': ('#c0392b', '1ª Cat.'),
-        'puerto_2a_categoria': ('#e67e22', '2ª Cat.'),
-        'puerto_3a_categoria': ('#27ae60', '3ª Cat.'),
-        'sprint_intermedio':   ('#1f6fd1', 'Sprint'),
-        'punto_anonimo':       ('#888888', ''),
+    # tipo: (letra del icono, color del escudo, color de la letra, adorno superior)
+    ICONOS = {
+        'salida':              ('S', '#5bc2e7', '#ffffff', 'banderin'),
+        'meta':                ('M', '#e8432e', '#ffffff', 'cuadros'),
+        'puerto_especial':     ('E', '#c27ab8', '#ffffff', 'montana'),
+        'puerto_1a_categoria': ('1', '#c27ab8', '#ffffff', 'montana'),
+        'puerto_2a_categoria': ('2', '#c27ab8', '#ffffff', 'montana'),
+        'puerto_3a_categoria': ('3', '#c27ab8', '#ffffff', 'montana'),
+        'sprint_intermedio':   ('SP', '#dde58a', '#222222', 'rayas'),
+        'bonificacion':        ('B', '#a6bc6a', '#ffffff', 'almena'),
     }
+    # orden de apilado cuando un mismo punto tiene varios iconos (de abajo arriba)
+    ORDEN_ICONOS = ['salida', 'meta', 'sprint_intermedio', 'bonificacion',
+                    'puerto_3a_categoria', 'puerto_2a_categoria',
+                    'puerto_1a_categoria', 'puerto_especial']
+
     COLOR_FONDO = '#ffffff'
-    COLOR_PERFIL = '#8a6d1d'
-    RELLENO_PERFIL = '#f5d76e'
-    COLOR_REJILLA = '#dddddd'
-    COLOR_EJES = '#444444'
-    COLOR_TEXTO = '#222222'
-    COLOR_SECUNDARIO = '#666666'
+    RELLENO_PERFIL = '#e8432e'
+    COLOR_PERFIL = '#c8331f'
+    RELLENO_SUBIDA = '#b0331f'
+    COLOR_REJILLA = '#000000'
+    COLOR_EJES = '#222222'
+    COLOR_TEXTO = '#1a1a1a'
+    COLOR_GUIA = '#1a1a1a'
 
-    def colorDe(self, punto):
+    def tieneIcono(self, tipo):
         """
-        Color del marcador según el tipo del punto
+        Indica si el tipo de punto se representa con un icono
         """
-        return self.TIPOS[punto.tipo][0]
+        return tipo in self.ICONOS
 
-    def categoriaDe(self, punto):
+    def icono(self, tipo):
         """
-        Texto de la categoría del punto (puerto, sprint, salida o meta)
+        Datos del icono de un tipo de punto
         """
-        return self.TIPOS[punto.tipo][1]
+        return self.ICONOS[tipo]
+
+    def ordenar(self, tipos):
+        """
+        Ordena los tipos de un punto para apilar sus iconos
+        """
+        return sorted(tipos, key=lambda t: self.ORDEN_ICONOS.index(t)
+                      if t in self.ORDEN_ICONOS else len(self.ORDEN_ICONOS))
 
 
 class EscalaPerfil(object):
@@ -305,18 +347,39 @@ class EscalaPerfil(object):
         return self.x(puntoPerfil.distanciaSalida), self.y(puntoPerfil.altitud)
 
 
+@dataclass
+class Rotulo(object):
+    """
+    Hito rotulado: puede reunir varios tipos (p. ej. sprint y bonificación) en el mismo km
+    """
+    nombre: str
+    altitud: float
+    distanciaSalida: float
+    tipos: list
+    xRotulo: float = 0.0
+
+
 class GeneradorAltimetria(object):
     """
     Construye la altimetría SVG de una etapa a partir de sus datos
     """
-    ANCHO = 1200
-    ALTO = 800
-    MARGEN_IZQUIERDO = 80
-    MARGEN_DERECHO = 50
-    MARGEN_SUPERIOR = 370   # espacio para las etiquetas verticales de los hitos
-    MARGEN_INFERIOR = 90
-    PASO_KM = 10
-    PASO_ALTITUD = 250
+    ANCHO = 1450
+    ALTO = 820
+    MARGEN_IZQUIERDO = 175     # nombre vertical de la salida y escala de altitudes
+    MARGEN_DERECHO = 95        # nombre vertical de la meta
+    Y_PERFIL_SUPERIOR = 420    # altura de la altitud máxima de la escala
+    Y_PERFIL_INFERIOR = 655    # eje de distancias (altitud 0)
+    Y_BASE_ICONOS = 395        # parte inferior de la fila de iconos
+    ALTO_ICONO = 46
+    ANCHO_ICONO = 36
+    SEPARACION_ICONOS = 10
+    PASO_ALTITUD = 200
+    TAMANO_ROTULO = 17
+    INTERLINEA = 19
+    SEPARACION_MINIMA = 24     # distancia mínima entre rótulos verticales
+    LONGITUD_MAXIMA_LINEA = 26 # los nombres más largos se parten en dos líneas
+    SEPARACION_KM = 36         # distancia mínima entre textos de la escala de km
+    Y_PIE = 770
 
     def __init__(self, lector, estilos):
         """
@@ -334,119 +397,256 @@ class GeneradorAltimetria(object):
         perfil = sorted([salida] + self.lector.hitos() + [meta],
                         key=lambda punto: punto.distanciaSalida)
         escala = self.__crearEscala(perfil, meta.distanciaSalida)
+        rotulos = self.__agruparRotulos(self.lector.hitosConNombre())
+        self.__colocarRotulos(escala, rotulos)
 
         svg = Svg(self.ANCHO, self.ALTO)
-        svg.addTitulo(self.__titulo())
+        svg.addTitulo('Etapa {}. {}'.format(self.lector.numeroEtapa(), self.lector.nombreEtapa()))
         svg.addRect(0, 0, self.ANCHO, self.ALTO, self.estilos.COLOR_FONDO)
 
-        self.__addCabecera(svg)
-        self.__addRejilla(svg, escala)
         self.__addPerfil(svg, escala, perfil)
-        self.__addEjes(svg, escala)
-        self.__addHitos(svg, escala, self.lector.hitosConNombre())
+        self.__addSubidas(svg, escala, perfil)
+        self.__addEscalaAltitudes(svg, escala)
+        self.__addGuias(svg, escala, salida, meta, rotulos)
+        self.__addEscalaDistancias(svg, escala, rotulos)
         self.__addSalidaMeta(svg, escala, salida, meta)
+        self.__addRotulos(svg, rotulos)
+        self.__addDesnivel(svg)
 
         svg.escribir(nombreArchivoSVG)
 
+    # ------------------------------------------------------------------ cálculo
+
     def __crearEscala(self, perfil, distanciaMaxima):
         """
-        Escala del perfil: la altitud máxima se redondea al siguiente múltiplo del paso
+        La altitud máxima de la escala se redondea al siguiente múltiplo del paso
         """
         altitudMaxima = max(punto.altitud for punto in perfil)
-        techo = math.ceil(altitudMaxima / self.PASO_ALTITUD) * self.PASO_ALTITUD
-        return EscalaPerfil(self.MARGEN_IZQUIERDO, self.ALTO - self.MARGEN_INFERIOR,
+        techo = max(self.PASO_ALTITUD,
+                    math.ceil(altitudMaxima / self.PASO_ALTITUD) * self.PASO_ALTITUD)
+        return EscalaPerfil(self.MARGEN_IZQUIERDO, self.Y_PERFIL_INFERIOR,
                             self.ANCHO - self.MARGEN_IZQUIERDO - self.MARGEN_DERECHO,
-                            self.ALTO - self.MARGEN_SUPERIOR - self.MARGEN_INFERIOR,
+                            self.Y_PERFIL_INFERIOR - self.Y_PERFIL_SUPERIOR,
                             distanciaMaxima, techo)
 
-    def __titulo(self):
+    def __agruparRotulos(self, hitos):
         """
-        Título de la etapa: número y nombre
+        Reúne en un solo rótulo los iconos de cada punto kilométrico: los hitos
+        con atributo bonificado="true" llevan además el icono B (Tocón: SP + B)
         """
-        return 'Etapa {}. {}'.format(self.lector.numeroEtapa(), self.lector.nombreEtapa())
+        rotulos = {}
+        for hito in hitos:
+            clave = round(hito.distanciaSalida, 1)
+            if clave not in rotulos:
+                rotulos[clave] = Rotulo(hito.nombre, hito.altitud, hito.distanciaSalida, [])
+            tipos = [hito.tipo] + (['bonificacion'] if hito.bonificado else [])
+            for tipo in tipos:
+                if self.estilos.tieneIcono(tipo) and tipo not in rotulos[clave].tipos:
+                    rotulos[clave].tipos.append(tipo)
+        for rotulo in rotulos.values():
+            rotulo.tipos = self.estilos.ordenar(rotulo.tipos)
+        return [rotulos[clave] for clave in sorted(rotulos)]
 
-    def __addCabecera(self, svg):
+    def __anchoRotulo(self, rotulo):
         """
-        Título de la etapa y datos generales (longitud y desnivel)
+        Espacio horizontal que ocupa un rótulo vertical (una o dos líneas)
         """
-        svg.addTexto(self.MARGEN_IZQUIERDO, 40, self.__titulo(), 24,
-                     self.estilos.COLOR_TEXTO, negrita=True)
-        datos = 'Altimetría · {:.1f} km · Desnivel acumulado {:.0f} m'.format(
-            self.lector.longitudEtapa(), self.lector.desnivelEtapa())
-        svg.addTexto(self.MARGEN_IZQUIERDO, 66, datos, 15, self.estilos.COLOR_SECUNDARIO)
+        return self.SEPARACION_MINIMA + self.INTERLINEA * (len(self.__lineas(rotulo)) - 1)
 
-    def __addRejilla(self, svg, escala):
+    def __colocarRotulos(self, escala, rotulos):
         """
-        Líneas horizontales de altitud y verticales de distancia
+        Desplaza a la derecha los rótulos que se solaparían (como Salobreña junto a la S)
         """
-        for altitud in range(self.PASO_ALTITUD, int(escala.altitudMaxima) + 1, self.PASO_ALTITUD):
-            y = escala.y(altitud)
-            svg.addLinea(escala.x0, y, escala.x0 + escala.ancho, y,
-                         self.estilos.COLOR_REJILLA, 1)
-            svg.addTexto(escala.x0 - 10, y + 4, '{} m'.format(altitud), 12,
-                         self.estilos.COLOR_SECUNDARIO, anclaje='end')
-        for km in range(self.PASO_KM, int(escala.distanciaMaxima) + 1, self.PASO_KM):
-            x = escala.x(km)
-            svg.addLinea(x, escala.y0, x, escala.y(escala.altitudMaxima),
-                         self.estilos.COLOR_REJILLA, 1)
+        mitadIcono = self.ANCHO_ICONO / 2
+        bordeAnterior = escala.x0 + mitadIcono               # borde derecho del icono S
+        for rotulo in rotulos:
+            # espacio necesario a la izquierda de la guía: texto (1 o 2 líneas) o icono
+            izquierda = self.__anchoRotulo(rotulo)
+            if rotulo.tipos:
+                izquierda = max(izquierda, mitadIcono + 6)
+            rotulo.xRotulo = max(escala.x(rotulo.distanciaSalida), bordeAnterior + izquierda)
+            bordeAnterior = rotulo.xRotulo + (mitadIcono if rotulo.tipos else 0)
+
+    def __lineas(self, rotulo):
+        """
+        Parte el nombre en dos líneas si es muy largo (Alto de la Venta / de la Cebada)
+        """
+        nombre = rotulo.nombre
+        if len(nombre) <= self.LONGITUD_MAXIMA_LINEA or ' ' not in nombre:
+            return [nombre]
+        mitad = len(nombre) // 2
+        espacios = [i for i, c in enumerate(nombre) if c == ' ']
+        corte = min(espacios, key=lambda i: abs(i - mitad))
+        return [nombre[:corte], nombre[corte + 1:]]
+
+    # ---------------------------------------------------------------- dibujo
 
     def __addPerfil(self, svg, escala, perfil):
         """
-        Área rellena bajo el perfil y su contorno
+        Polilínea cerrada (polígono) rellena de rojo bajo el perfil
         """
         contorno = [escala.punto(punto) for punto in perfil]
         base = [(contorno[-1][0], escala.y0), (contorno[0][0], escala.y0)]
-        svg.addPoligono(contorno + base, self.estilos.RELLENO_PERFIL, 'none', 0)
-        svg.addPolilinea(contorno, self.estilos.COLOR_PERFIL, 2.5)
+        svg.addPoligono(contorno + base, self.estilos.RELLENO_PERFIL,
+                        self.estilos.COLOR_PERFIL, 1.5)
 
-    def __addEjes(self, svg, escala):
+    def __addSubidas(self, svg, escala, perfil):
         """
-        Ejes de distancia y altitud con las marcas kilométricas
+        Sombrea en rojo oscuro la ascensión a cada puerto: desde el último punto
+        más bajo antes de la cima hasta la cima, como en el libro de ruta
+        """
+        for i, punto in enumerate(perfil):
+            if not punto.tipo.startswith('puerto'):
+                continue
+            inicio = i
+            while inicio > 0 and perfil[inicio - 1].altitud < perfil[inicio].altitud:
+                inicio -= 1
+            if inicio == i:
+                continue
+            tramo = [escala.punto(p) for p in perfil[inicio:i + 1]]
+            base = [(tramo[-1][0], escala.y0), (tramo[0][0], escala.y0)]
+            svg.addPoligono(tramo + base, self.estilos.RELLENO_SUBIDA)
+
+    def __addEscalaAltitudes(self, svg, escala):
+        """
+        Escala vertical en metros con líneas de referencia sobre el perfil
+        """
+        xFin = escala.x0 + escala.ancho
+        for altitud in range(0, int(escala.altitudMaxima) + 1, self.PASO_ALTITUD):
+            y = escala.y(altitud)
+            svg.addLinea(escala.x0 - 6, y, xFin, y, self.estilos.COLOR_REJILLA, 0.8, 0.22)
+            svg.addTexto(escala.x0 - 10, y + 4, str(altitud), 12,
+                         self.estilos.COLOR_TEXTO, anclaje='end')
+        svg.addLinea(escala.x0, escala.y0, escala.x0, escala.y(escala.altitudMaxima),
+                     self.estilos.COLOR_EJES, 1.2)
+
+    def __addGuias(self, svg, escala, salida, meta, rotulos):
+        """
+        Líneas que bajan desde cada rótulo hasta el eje; quiebran si el rótulo se desplazó
+        """
+        yInicio = self.Y_BASE_ICONOS + 6
+        for punto in (salida, meta):
+            x = escala.x(punto.distanciaSalida)
+            svg.addLinea(x, yInicio, x, escala.y0, self.estilos.COLOR_GUIA, 1)
+        for rotulo in rotulos:
+            x = escala.x(rotulo.distanciaSalida)
+            if abs(rotulo.xRotulo - x) < 0.5:
+                svg.addLinea(x, yInicio, x, escala.y0, self.estilos.COLOR_GUIA, 1)
+            else:
+                yQuiebre = yInicio + 30
+                svg.addPolilinea([(rotulo.xRotulo, yInicio), (rotulo.xRotulo, yQuiebre),
+                                  (x, yQuiebre + 18), (x, escala.y0)],
+                                 self.estilos.COLOR_GUIA, 1)
+
+    def __addEscalaDistancias(self, svg, escala, rotulos):
+        """
+        Escala horizontal en km: salida, cada punto rotulado y meta
         """
         svg.addLinea(escala.x0, escala.y0, escala.x0 + escala.ancho, escala.y0,
                      self.estilos.COLOR_EJES, 1.5)
-        svg.addLinea(escala.x0, escala.y0, escala.x0, escala.y(escala.altitudMaxima),
-                     self.estilos.COLOR_EJES, 1.5)
-        for km in range(0, int(escala.distanciaMaxima) + 1, self.PASO_KM):
-            x = escala.x(km)
+        kms = [0.0] + [rotulo.distanciaSalida for rotulo in rotulos] + [escala.distanciaMaxima]
+        xs = [escala.x(km) for km in kms]
+        yTexto = escala.y0 + 22
+        for i, (km, x) in enumerate(zip(kms, xs)):
+            # si dos marcas están muy juntas, sus textos se separan hacia fuera
+            anclaje = 'middle'
+            if i + 1 < len(xs) and xs[i + 1] - x < self.SEPARACION_KM:
+                anclaje = 'end'
+            elif i > 0 and x - xs[i - 1] < self.SEPARACION_KM:
+                anclaje = 'start'
+            xTexto = x + {'middle': 0, 'end': 2, 'start': -2}[anclaje]
             svg.addLinea(x, escala.y0, x, escala.y0 + 6, self.estilos.COLOR_EJES, 1.5)
-            svg.addTexto(x, escala.y0 + 20, str(km), 12, self.estilos.COLOR_SECUNDARIO,
-                         anclaje='middle')
-        svg.addTexto(escala.x0 + escala.ancho, escala.y0 + 20, 'km', 12,
-                     self.estilos.COLOR_SECUNDARIO, anclaje='start')
-
-    def __addHitos(self, svg, escala, hitos):
-        """
-        Marcador sobre el perfil y etiqueta vertical para cada hito destacado
-        """
-        yEtiqueta = escala.y(escala.altitudMaxima) - 12
-        for hito in hitos:
-            x, y = escala.punto(hito)
-            color = self.estilos.colorDe(hito)
-            svg.addLinea(x, y, x, yEtiqueta, color, 1, discontinua='4 3')
-            svg.addCirculo(x, y, 6, color)
-            texto = svg.addTexto(x - 3, yEtiqueta, '', 13, self.estilos.COLOR_TEXTO,
-                                 rotacion=-90)
-            svg.addTramoTexto(texto, self.estilos.categoriaDe(hito) + '  ', color, negrita=True)
-            svg.addTramoTexto(texto, hito.nombre, negrita=True)
-            svg.addTexto(x + 12, yEtiqueta, hito.etiqueta(), 11,
-                         self.estilos.COLOR_SECUNDARIO, rotacion=-90)
+            svg.addTexto(xTexto, yTexto, formatoKm(km), 14, self.estilos.COLOR_TEXTO,
+                         anclaje=anclaje, negrita=True)
+        svg.addTexto(escala.x(escala.distanciaMaxima) + 22, yTexto, 'km', 14,
+                     self.estilos.COLOR_TEXTO, negrita=True)
 
     def __addSalidaMeta(self, svg, escala, salida, meta):
         """
-        Marcadores de salida y meta con su nombre bajo el eje de distancias
+        Iconos S y M y nombres verticales de salida (izquierda) y meta (derecha)
         """
-        for punto, anclaje in ((salida, 'start'), (meta, 'end')):
+        for punto, desplazamiento in ((salida, -58), (meta, 42)):
             x, y = escala.punto(punto)
-            color = self.estilos.colorDe(punto)
-            svg.addCirculo(x, y, 7, color)
-            texto = svg.addTexto(x, escala.y0 + 48, '', 15, self.estilos.COLOR_TEXTO,
-                                 anclaje=anclaje)
-            svg.addTramoTexto(texto, self.estilos.categoriaDe(punto).upper() + ': ',
-                              color, negrita=True)
-            svg.addTramoTexto(texto, punto.nombre, negrita=True)
-            svg.addTexto(x, escala.y0 + 68, punto.etiqueta(), 12,
-                         self.estilos.COLOR_SECUNDARIO, anclaje=anclaje)
+            self.__addIcono(svg, x, self.Y_BASE_ICONOS, punto.tipo)
+            texto = svg.addTexto(x + desplazamiento, escala.y0, '', 26,
+                                 self.estilos.COLOR_TEXTO, rotacion=-90)
+            svg.addTramoTexto(texto, punto.nombre.upper(), negrita=True)
+            svg.addTramoTexto(texto, ' / {} m'.format(formatoMetros(punto.altitud)))
+            texto.set('font-size', '26')
+
+    def __addRotulos(self, svg, rotulos):
+        """
+        Iconos apilados y nombre vertical con la altitud de cada hito rotulado
+        """
+        for rotulo in rotulos:
+            yBase = self.Y_BASE_ICONOS
+            for tipo in rotulo.tipos:
+                self.__addIcono(svg, rotulo.xRotulo, yBase, tipo)
+                yBase -= self.ALTO_ICONO + self.SEPARACION_ICONOS
+            yTexto = yBase - 4 if rotulo.tipos else yBase
+            lineas = self.__lineas(rotulo)
+            # la última línea queda pegada a la guía; las anteriores, a su izquierda
+            xPrimera = rotulo.xRotulo - 4 - self.INTERLINEA * (len(lineas) - 1)
+            texto = svg.addTexto(xPrimera, yTexto, '', self.TAMANO_ROTULO,
+                                 self.estilos.COLOR_TEXTO, rotacion=-90)
+            for i, linea in enumerate(lineas):
+                if i == 0:
+                    svg.addTramoTexto(texto, linea, negrita=True)
+                else:
+                    svg.addTramoTexto(texto, linea, negrita=True,
+                                      x=xPrimera, dy=self.INTERLINEA)
+            svg.addTramoTexto(texto, ' / {} m'.format(formatoMetros(rotulo.altitud)))
+
+    def __addIcono(self, svg, cx, yBase, tipo):
+        """
+        Escudo con la letra de la categoría y su adorno superior (banderín, cuadros...)
+        """
+        letra, relleno, colorLetra, adorno = self.estilos.icono(tipo)
+        a, h = self.ANCHO_ICONO, self.ALTO_ICONO
+        izq, der, arriba = cx - a / 2, cx + a / 2, yBase - h
+        radio = a / 2
+        n = Svg.num
+        svg.addRuta('M {} {} H {} V {} A {} {} 0 0 1 {} {} Z'.format(
+            n(izq), n(arriba), n(der), n(yBase - radio), n(radio), n(radio),
+            n(izq), n(yBase - radio)), relleno)
+        self.__addAdorno(svg, adorno, izq, der, arriba, relleno)
+        svg.addTexto(cx, yBase - h * 0.32, letra, 20 if len(letra) == 1 else 17,
+                     colorLetra, anclaje='middle', negrita=True)
+
+    def __addAdorno(self, svg, adorno, izq, der, arriba, color):
+        """
+        Pequeño distintivo sobre el escudo, a imitación de los iconos del libro de ruta
+        """
+        if adorno == 'banderin':
+            svg.addPoligono([(izq, arriba - 2), (izq, arriba - 12), (der, arriba - 6),
+                             (der, arriba - 2)], color)
+        elif adorno == 'montana':
+            svg.addPoligono([(izq, arriba - 2), (izq + 10, arriba - 9), (izq + 12, arriba - 2)],
+                            color)
+            svg.addPoligono([(izq + 15, arriba - 2), (der, arriba - 11), (der, arriba - 2)],
+                            color)
+        elif adorno == 'cuadros':
+            lado = (der - izq) / 6
+            for fila in range(2):
+                for columna in range(6):
+                    if (fila + columna) % 2 == 0:
+                        svg.addRect(izq + columna * lado, arriba - 2 - lado * (fila + 1),
+                                    lado, lado, color)
+        elif adorno == 'rayas':
+            for i in range(3):
+                svg.addRect(izq + 3 * i, arriba - 4 - 3.5 * i, der - izq - 6 * i, 2, color)
+        elif adorno == 'almena':
+            svg.addRect(izq + 6, arriba - 6, der - izq - 12, 4, color)
+            svg.addRect(izq + 11, arriba - 9, der - izq - 22, 3, color)
+
+    def __addDesnivel(self, svg):
+        """
+        Desnivel positivo de la etapa al pie, en horizontal
+        """
+        texto = svg.addTexto(self.ANCHO / 2, self.Y_PIE, '', 26, self.estilos.COLOR_TEXTO,
+                             anclaje='middle')
+        svg.addTramoTexto(texto, 'Desnivel positivo: ', negrita=True)
+        svg.addTramoTexto(texto, '{} m'.format(formatoMetros(self.lector.desnivelEtapa())))
 
 
 class Aplicacion(object):

@@ -1,123 +1,85 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1200" height="800" viewBox="0 0 1200 800">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1450" height="820" viewBox="0 0 1450 820">
   <title>Etapa 13. Almuñécar a Loja</title>
-  <rect x="0" y="0" width="1200" height="800" fill="#ffffff" stroke="none" />
-  <text x="80" y="40" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="24" text-anchor="start" font-weight="bold">Etapa 13. Almuñécar a Loja</text>
-  <text x="80" y="66" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="start">Altimetría · 192.8 km · Desnivel acumulado 3404 m</text>
-  <line x1="80" y1="653.33" x2="1150" y2="653.33" stroke="#dddddd" stroke-width="1" />
-  <text x="70" y="657.33" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">250 m</text>
-  <line x1="80" y1="596.67" x2="1150" y2="596.67" stroke="#dddddd" stroke-width="1" />
-  <text x="70" y="600.67" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">500 m</text>
-  <line x1="80" y1="540" x2="1150" y2="540" stroke="#dddddd" stroke-width="1" />
-  <text x="70" y="544" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">750 m</text>
-  <line x1="80" y1="483.33" x2="1150" y2="483.33" stroke="#dddddd" stroke-width="1" />
-  <text x="70" y="487.33" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">1000 m</text>
-  <line x1="80" y1="426.67" x2="1150" y2="426.67" stroke="#dddddd" stroke-width="1" />
-  <text x="70" y="430.67" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">1250 m</text>
-  <line x1="80" y1="370" x2="1150" y2="370" stroke="#dddddd" stroke-width="1" />
-  <text x="70" y="374" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">1500 m</text>
-  <line x1="135.5" y1="710" x2="135.5" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="191" y1="710" x2="191" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="246.49" y1="710" x2="246.49" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="301.99" y1="710" x2="301.99" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="357.49" y1="710" x2="357.49" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="412.99" y1="710" x2="412.99" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="468.49" y1="710" x2="468.49" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="523.98" y1="710" x2="523.98" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="579.48" y1="710" x2="579.48" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="634.98" y1="710" x2="634.98" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="690.48" y1="710" x2="690.48" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="745.98" y1="710" x2="745.98" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="801.47" y1="710" x2="801.47" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="856.97" y1="710" x2="856.97" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="912.47" y1="710" x2="912.47" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="967.97" y1="710" x2="967.97" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="1023.46" y1="710" x2="1023.46" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="1078.96" y1="710" x2="1078.96" y2="370" stroke="#dddddd" stroke-width="1" />
-  <line x1="1134.46" y1="710" x2="1134.46" y2="370" stroke="#dddddd" stroke-width="1" />
-  <polygon points="80,690.51 104.92,705.47 138.49,693.68 156.37,686.43 195.21,635.88 205.2,603.47 253.15,523.68 276.8,548.84 303.43,588.51 322.8,541.59 352.72,513.93 378.52,542.49 388.12,540.45 409.38,543.63 441.57,518.01 499.34,451.15 542.85,404 576.76,475.63 615.44,516.65 643.86,514.39 695.92,475.17 714.79,509.4 727.66,521.64 748.69,542.27 788.1,550.2 819.95,569.69 835.1,580.8 851.98,594.17 884.16,584.2 942.44,472.45 977.79,542.04 1008.87,557.45 1042.78,582.84 1089.34,601.43 1140.57,606.41 1150,597.12 1150,710 80,710" fill="#f5d76e" stroke="none" stroke-width="0" stroke-linejoin="round" />
-  <polyline points="80,690.51 104.92,705.47 138.49,693.68 156.37,686.43 195.21,635.88 205.2,603.47 253.15,523.68 276.8,548.84 303.43,588.51 322.8,541.59 352.72,513.93 378.52,542.49 388.12,540.45 409.38,543.63 441.57,518.01 499.34,451.15 542.85,404 576.76,475.63 615.44,516.65 643.86,514.39 695.92,475.17 714.79,509.4 727.66,521.64 748.69,542.27 788.1,550.2 819.95,569.69 835.1,580.8 851.98,594.17 884.16,584.2 942.44,472.45 977.79,542.04 1008.87,557.45 1042.78,582.84 1089.34,601.43 1140.57,606.41 1150,597.12" fill="none" stroke="#8a6d1d" stroke-width="2.5" stroke-linejoin="round" />
-  <line x1="80" y1="710" x2="1150" y2="710" stroke="#444444" stroke-width="1.5" />
-  <line x1="80" y1="710" x2="80" y2="370" stroke="#444444" stroke-width="1.5" />
-  <line x1="80" y1="710" x2="80" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="80" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">0</text>
-  <line x1="135.5" y1="710" x2="135.5" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="135.5" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">10</text>
-  <line x1="191" y1="710" x2="191" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="191" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">20</text>
-  <line x1="246.49" y1="710" x2="246.49" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="246.49" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">30</text>
-  <line x1="301.99" y1="710" x2="301.99" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="301.99" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">40</text>
-  <line x1="357.49" y1="710" x2="357.49" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="357.49" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">50</text>
-  <line x1="412.99" y1="710" x2="412.99" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="412.99" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">60</text>
-  <line x1="468.49" y1="710" x2="468.49" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="468.49" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">70</text>
-  <line x1="523.98" y1="710" x2="523.98" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="523.98" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">80</text>
-  <line x1="579.48" y1="710" x2="579.48" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="579.48" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">90</text>
-  <line x1="634.98" y1="710" x2="634.98" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="634.98" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">100</text>
-  <line x1="690.48" y1="710" x2="690.48" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="690.48" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">110</text>
-  <line x1="745.98" y1="710" x2="745.98" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="745.98" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">120</text>
-  <line x1="801.47" y1="710" x2="801.47" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="801.47" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">130</text>
-  <line x1="856.97" y1="710" x2="856.97" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="856.97" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">140</text>
-  <line x1="912.47" y1="710" x2="912.47" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="912.47" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">150</text>
-  <line x1="967.97" y1="710" x2="967.97" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="967.97" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">160</text>
-  <line x1="1023.46" y1="710" x2="1023.46" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="1023.46" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">170</text>
-  <line x1="1078.96" y1="710" x2="1078.96" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="1078.96" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">180</text>
-  <line x1="1134.46" y1="710" x2="1134.46" y2="716" stroke="#444444" stroke-width="1.5" />
-  <text x="1134.46" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">190</text>
-  <text x="1150" y="730" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="start">km</text>
-  <line x1="253.15" y1="523.68" x2="253.15" y2="358" stroke="#c0392b" stroke-width="1" stroke-dasharray="4 3" />
-  <circle cx="253.15" cy="523.68" r="6" fill="#c0392b" stroke="#ffffff" stroke-width="2" />
-  <text x="250.15" y="358" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" transform="rotate(-90 250.15 358)">
-    <tspan fill="#c0392b" font-weight="bold">1ª Cat.  </tspan>
-    <tspan font-weight="bold">Alto de la Venta de la Cebada</tspan>
-  </text>
-  <text x="265.15" y="358" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" transform="rotate(-90 265.15 358)">822 m · km 31.2</text>
-  <line x1="542.85" y1="404" x2="542.85" y2="358" stroke="#27ae60" stroke-width="1" stroke-dasharray="4 3" />
-  <circle cx="542.85" cy="404" r="6" fill="#27ae60" stroke="#ffffff" stroke-width="2" />
-  <text x="539.85" y="358" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" transform="rotate(-90 539.85 358)">
-    <tspan fill="#27ae60" font-weight="bold">3ª Cat.  </tspan>
-    <tspan font-weight="bold">Alto del Legionario</tspan>
-  </text>
-  <text x="554.85" y="358" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" transform="rotate(-90 554.85 358)">1350 m · km 83.4</text>
-  <line x1="884.16" y1="584.2" x2="884.16" y2="358" stroke="#1f6fd1" stroke-width="1" stroke-dasharray="4 3" />
-  <circle cx="884.16" cy="584.2" r="6" fill="#1f6fd1" stroke="#ffffff" stroke-width="2" />
-  <text x="881.16" y="358" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" transform="rotate(-90 881.16 358)">
-    <tspan fill="#1f6fd1" font-weight="bold">Sprint  </tspan>
-    <tspan font-weight="bold">Tocón</tspan>
-  </text>
-  <text x="896.16" y="358" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" transform="rotate(-90 896.16 358)">555 m · km 144.9</text>
-  <line x1="942.44" y1="472.45" x2="942.44" y2="358" stroke="#e67e22" stroke-width="1" stroke-dasharray="4 3" />
-  <circle cx="942.44" cy="472.45" r="6" fill="#e67e22" stroke="#ffffff" stroke-width="2" />
-  <text x="939.44" y="358" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" transform="rotate(-90 939.44 358)">
-    <tspan fill="#e67e22" font-weight="bold">2ª Cat.  </tspan>
-    <tspan font-weight="bold">Puerto de Granada</tspan>
-  </text>
-  <text x="954.44" y="358" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" transform="rotate(-90 954.44 358)">1048 m · km 155.4</text>
-  <circle cx="80" cy="690.51" r="7" fill="#d0021b" stroke="#ffffff" stroke-width="2" />
-  <text x="80" y="758" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="start">
-    <tspan fill="#d0021b" font-weight="bold">SALIDA: </tspan>
-    <tspan font-weight="bold">Almuñécar</tspan>
-  </text>
-  <text x="80" y="778" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="start">86 m · km 0.0</text>
-  <circle cx="1150" cy="597.12" r="7" fill="#d0021b" stroke="#ffffff" stroke-width="2" />
-  <text x="1150" y="758" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="end">
-    <tspan fill="#d0021b" font-weight="bold">META: </tspan>
-    <tspan font-weight="bold">Loja</tspan>
-  </text>
-  <text x="1150" y="778" fill="#666666" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">498 m · km 192.8</text>
+  <rect x="0" y="0" width="1450" height="820" fill="#ffffff" stroke="none" />
+  <polygon points="175,640.56 202.48,651.64 239.51,642.91 259.22,637.54 302.06,600.11 313.07,576.11 365.95,517.02 392.03,535.65 421.4,565.03 442.76,530.28 475.75,509.8 504.21,530.95 514.8,529.44 538.24,531.79 573.74,512.83 637.45,463.31 685.44,428.39 722.83,481.44 765.49,511.82 796.83,510.14 854.23,481.1 875.04,506.45 889.24,515.51 912.44,530.79 955.89,536.66 991.02,551.1 1007.73,559.32 1026.34,569.23 1061.84,561.84 1126.1,479.09 1165.09,530.62 1199.36,542.03 1236.76,560.83 1288.1,574.6 1344.6,578.29 1355,571.41 1355,655 175,655" fill="#e8432e" stroke="#c8331f" stroke-width="1.5" stroke-linejoin="round" />
+  <polygon points="202.48,651.64 239.51,642.91 259.22,637.54 302.06,600.11 313.07,576.11 365.95,517.02 365.95,655 202.48,655" fill="#b0331f" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <polygon points="538.24,531.79 573.74,512.83 637.45,463.31 685.44,428.39 685.44,655 538.24,655" fill="#b0331f" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <polygon points="1026.34,569.23 1061.84,561.84 1126.1,479.09 1126.1,655 1026.34,655" fill="#b0331f" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <line x1="169" y1="655" x2="1355" y2="655" stroke="#000000" stroke-width="0.8" stroke-opacity="0.22" />
+  <text x="165" y="659" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">0</text>
+  <line x1="169" y1="621.43" x2="1355" y2="621.43" stroke="#000000" stroke-width="0.8" stroke-opacity="0.22" />
+  <text x="165" y="625.43" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">200</text>
+  <line x1="169" y1="587.86" x2="1355" y2="587.86" stroke="#000000" stroke-width="0.8" stroke-opacity="0.22" />
+  <text x="165" y="591.86" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">400</text>
+  <line x1="169" y1="554.29" x2="1355" y2="554.29" stroke="#000000" stroke-width="0.8" stroke-opacity="0.22" />
+  <text x="165" y="558.29" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">600</text>
+  <line x1="169" y1="520.71" x2="1355" y2="520.71" stroke="#000000" stroke-width="0.8" stroke-opacity="0.22" />
+  <text x="165" y="524.71" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">800</text>
+  <line x1="169" y1="487.14" x2="1355" y2="487.14" stroke="#000000" stroke-width="0.8" stroke-opacity="0.22" />
+  <text x="165" y="491.14" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">1000</text>
+  <line x1="169" y1="453.57" x2="1355" y2="453.57" stroke="#000000" stroke-width="0.8" stroke-opacity="0.22" />
+  <text x="165" y="457.57" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">1200</text>
+  <line x1="169" y1="420" x2="1355" y2="420" stroke="#000000" stroke-width="0.8" stroke-opacity="0.22" />
+  <text x="165" y="424" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">1400</text>
+  <line x1="175" y1="655" x2="175" y2="420" stroke="#222222" stroke-width="1.2" />
+  <line x1="175" y1="401" x2="175" y2="655" stroke="#1a1a1a" stroke-width="1" />
+  <line x1="1355" y1="401" x2="1355" y2="655" stroke="#1a1a1a" stroke-width="1" />
+  <line x1="365.95" y1="401" x2="365.95" y2="655" stroke="#1a1a1a" stroke-width="1" />
+  <line x1="685.44" y1="401" x2="685.44" y2="655" stroke="#1a1a1a" stroke-width="1" />
+  <line x1="1061.84" y1="401" x2="1061.84" y2="655" stroke="#1a1a1a" stroke-width="1" />
+  <line x1="1126.1" y1="401" x2="1126.1" y2="655" stroke="#1a1a1a" stroke-width="1" />
+  <line x1="175" y1="655" x2="1355" y2="655" stroke="#222222" stroke-width="1.5" />
+  <line x1="175" y1="655" x2="175" y2="661" stroke="#222222" stroke-width="1.5" />
+  <text x="175" y="677" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">0</text>
+  <line x1="365.95" y1="655" x2="365.95" y2="661" stroke="#222222" stroke-width="1.5" />
+  <text x="365.95" y="677" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">31,2</text>
+  <line x1="685.44" y1="655" x2="685.44" y2="661" stroke="#222222" stroke-width="1.5" />
+  <text x="685.44" y="677" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">83,4</text>
+  <line x1="1061.84" y1="655" x2="1061.84" y2="661" stroke="#222222" stroke-width="1.5" />
+  <text x="1061.84" y="677" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">144,9</text>
+  <line x1="1126.1" y1="655" x2="1126.1" y2="661" stroke="#222222" stroke-width="1.5" />
+  <text x="1126.1" y="677" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">155,4</text>
+  <line x1="1355" y1="655" x2="1355" y2="661" stroke="#222222" stroke-width="1.5" />
+  <text x="1355" y="677" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">192,8</text>
+  <text x="1377" y="677" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="14" text-anchor="start" font-weight="bold">km</text>
+  <path d="M 157 349 H 193 V 377 A 18 18 0 0 1 157 377 Z" fill="#5bc2e7" stroke="none" stroke-width="0" />
+  <polygon points="157,347 157,337 193,343 193,347" fill="#5bc2e7" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <text x="175" y="380.28" fill="#ffffff" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">S</text>
+  <text x="117" y="655" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="26" text-anchor="start" transform="rotate(-90 117 655)"><tspan font-weight="bold">ALMUÑÉCAR</tspan><tspan font-weight="normal"> / 86 m</tspan></text>
+  <path d="M 1337 349 H 1373 V 377 A 18 18 0 0 1 1337 377 Z" fill="#e8432e" stroke="none" stroke-width="0" />
+  <rect x="1337" y="341" width="6" height="6" fill="#e8432e" stroke="none" />
+  <rect x="1349" y="341" width="6" height="6" fill="#e8432e" stroke="none" />
+  <rect x="1361" y="341" width="6" height="6" fill="#e8432e" stroke="none" />
+  <rect x="1343" y="335" width="6" height="6" fill="#e8432e" stroke="none" />
+  <rect x="1355" y="335" width="6" height="6" fill="#e8432e" stroke="none" />
+  <rect x="1367" y="335" width="6" height="6" fill="#e8432e" stroke="none" />
+  <text x="1355" y="380.28" fill="#ffffff" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">M</text>
+  <text x="1397" y="655" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="26" text-anchor="start" transform="rotate(-90 1397 655)"><tspan font-weight="bold">LOJA</tspan><tspan font-weight="normal"> / 498 m</tspan></text>
+  <path d="M 347.95 349 H 383.95 V 377 A 18 18 0 0 1 347.95 377 Z" fill="#c27ab8" stroke="none" stroke-width="0" />
+  <polygon points="347.95,347 357.95,340 359.95,347" fill="#c27ab8" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <polygon points="362.95,347 383.95,338 383.95,347" fill="#c27ab8" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <text x="365.95" y="380.28" fill="#ffffff" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">1</text>
+  <text x="342.95" y="335" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="17" text-anchor="start" transform="rotate(-90 342.95 335)"><tspan font-weight="bold">Alto de la Venta</tspan><tspan x="342.95" dy="19" font-weight="bold">de la Cebada</tspan><tspan font-weight="normal"> / 822 m</tspan></text>
+  <path d="M 667.44 349 H 703.44 V 377 A 18 18 0 0 1 667.44 377 Z" fill="#c27ab8" stroke="none" stroke-width="0" />
+  <polygon points="667.44,347 677.44,340 679.44,347" fill="#c27ab8" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <polygon points="682.44,347 703.44,338 703.44,347" fill="#c27ab8" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <text x="685.44" y="380.28" fill="#ffffff" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">3</text>
+  <text x="681.44" y="335" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="17" text-anchor="start" transform="rotate(-90 681.44 335)"><tspan font-weight="bold">Alto del Legionario</tspan><tspan font-weight="normal"> / 1.350 m</tspan></text>
+  <path d="M 1043.84 349 H 1079.84 V 377 A 18 18 0 0 1 1043.84 377 Z" fill="#dde58a" stroke="none" stroke-width="0" />
+  <rect x="1043.84" y="345" width="36" height="2" fill="#dde58a" stroke="none" />
+  <rect x="1046.84" y="341.5" width="30" height="2" fill="#dde58a" stroke="none" />
+  <rect x="1049.84" y="338" width="24" height="2" fill="#dde58a" stroke="none" />
+  <text x="1061.84" y="380.28" fill="#222222" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="17" text-anchor="middle" font-weight="bold">SP</text>
+  <path d="M 1043.84 293 H 1079.84 V 321 A 18 18 0 0 1 1043.84 321 Z" fill="#a6bc6a" stroke="none" stroke-width="0" />
+  <rect x="1049.84" y="287" width="24" height="4" fill="#a6bc6a" stroke="none" />
+  <rect x="1054.84" y="284" width="14" height="3" fill="#a6bc6a" stroke="none" />
+  <text x="1061.84" y="324.28" fill="#ffffff" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">B</text>
+  <text x="1057.84" y="279" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="17" text-anchor="start" transform="rotate(-90 1057.84 279)"><tspan font-weight="bold">Tocón</tspan><tspan font-weight="normal"> / 555 m</tspan></text>
+  <path d="M 1108.1 349 H 1144.1 V 377 A 18 18 0 0 1 1108.1 377 Z" fill="#c27ab8" stroke="none" stroke-width="0" />
+  <polygon points="1108.1,347 1118.1,340 1120.1,347" fill="#c27ab8" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <polygon points="1123.1,347 1144.1,338 1144.1,347" fill="#c27ab8" stroke="none" stroke-width="0" stroke-linejoin="round" />
+  <text x="1126.1" y="380.28" fill="#ffffff" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">2</text>
+  <text x="1122.1" y="335" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="17" text-anchor="start" transform="rotate(-90 1122.1 335)"><tspan font-weight="bold">Puerto de Granada</tspan><tspan font-weight="normal"> / 1.048 m</tspan></text>
+  <text x="725" y="770" fill="#1a1a1a" font-family="'Arial Narrow', 'Roboto Condensed', Arial, Helvetica, sans-serif" font-size="26" text-anchor="middle"><tspan font-weight="bold">Desnivel positivo: </tspan><tspan font-weight="normal">3.404 m</tspan></text>
 </svg>
