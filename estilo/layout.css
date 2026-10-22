@@ -11,3 +11,25 @@
 
 
 
+/* Especificidad: 002 */
+section:has(picture) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Especificidad: 003 */
+section:has(picture) > h3 {
+    flex-basis: 100%;
+}
+
+/* Especificidad: 003 */
+section:has(picture) > picture {
+    order: 1;
+}
+
+/* Especificidad: 003 */
+section:has(picture) > ul {
+    order: 2;
+    list-style: none;
+}
