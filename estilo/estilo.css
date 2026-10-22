@@ -33,7 +33,7 @@ body {
     font-family: Verdana, "Trebuchet MS", sans-serif;
     color: var(--color-negro);
     background-color: var(--color-blanco);
-}
+}   
 
 /* Especificidad: 001 , 001*/
 header,
@@ -49,8 +49,7 @@ footer a {
     text-decoration: none;
 }
 
-/* Especificidad: 001 (para h1, h2, h3, h4, h5, h6) */
-h1,
+/* Especificidad: 001 (para h2, h3, h4, h5, h6) */
 h2,
 h3,
 h4,
@@ -60,16 +59,27 @@ h6 {
     background-color: var(--color-blanco);
 }
 
-/* Especificidad: 002 */
-header h1 {
-    color: var(--color-blanco);
-    background-color: var(--color-principal);
+/* Especificidad: 001 */
+th {
+    background-color: var(--color-secundario);/*ADVERTENCIA: color de primer plano heredado de body --color-negro */
 }
 
 /* Especificidad: 001 */
-th {
-    color: var(--color-negro);
-    background-color: var(--color-secundario);
+table {
+    border-collapse: collapse;
+}
+
+/* Especificidad: 001, 001 */
+th,
+td {
+    border: 0.1em solid var(--color-principal);
+    padding: 0.3em 0.6em;
+}
+
+/* Especificidad: 013, 013 */
+header nav a:hover,
+header nav a:focus {
+    text-decoration: underline;
 }
 
 /* Especificidad: 013 */

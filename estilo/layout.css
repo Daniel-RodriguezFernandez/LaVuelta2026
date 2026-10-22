@@ -1,14 +1,69 @@
-/* ***************************************/
-/*           LaVuelta2026                */
-/*          Estilos layout               */
-/* ***************************************/
-/*    DATOS ESTUDIANTE                   */
-/* --------------------------------------*/
-/*  Nombre y Apellidos:                  */
-/*  Correo electrónico (uniovi):         */
-/*  Grupo de laboratorio:                */
-/* ***************************************/
+/* ****************************************************/
+/*             LaVuelta2026                           */
+/*          Estilos layout                            */
+/* ****************************************************/
+/*    DATOS ESTUDIANTE                                */
+/* ---------------------------------------------------*/
+/*  Nombre y Apellidos: Daniel Rodríguez Fernández    */
+/*  Correo electrónico (uniovi): UO293655@uniovi.es   */
+/*  Grupo de laboratorio: 11                          */
+/* ****************************************************/
 
+/* Especificidad: 001 */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "cabecera"
+        "migas"
+        "contenido"
+        "pie";
+    grid-template-rows: auto auto 1fr auto;
+}
+
+/* Especificidad: 002 */
+body>header {
+    grid-area: cabecera;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+/* Especificidad: 003 */
+body>header>nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3em;
+}
+
+/* Especificidad: 004 */
+body>header>nav>a {
+    padding: 0.5em 0.8em;
+}
+
+/* Especificidad: 003 */
+body>header+nav {
+    grid-area: migas;
+}
+
+/* Especificidad: 002 */
+body>main {
+    grid-area: contenido;
+    padding: 0 1em;
+}
+
+/* Especificidad: 002 */
+body>footer {
+    grid-area: pie;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
 
 
 /* Especificidad: 002 */
@@ -19,17 +74,116 @@ section:has(picture) {
 }
 
 /* Especificidad: 003 */
-section:has(picture) > h3 {
+section:has(picture)>h3 {
     flex-basis: 100%;
 }
 
 /* Especificidad: 003 */
-section:has(picture) > picture {
+section:has(picture)>picture {
     order: 1;
 }
 
 /* Especificidad: 003 */
-section:has(picture) > ul {
+section:has(picture)>ul {
     order: 2;
     list-style: none;
+}
+
+/* Especificidad: 002 */
+section:has(video) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Especificidad: 003, 003 */
+section:has(video)>video,
+section:has(video)>audio {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Especificidad: 003 */
+section:has(article + article) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/* Especificidad: 004 */
+section:has(article + article)>h3 {
+    grid-column: 1 / -1;
+}
+
+/* Especificidad: 001 */
+form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    max-width: 100%;
+}
+
+/* Especificidad: 002, 003 */
+form>fieldset,
+form>fieldset>fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Especificidad: 003 */
+form>fieldset>label {
+    margin-top: 1em;
+}
+
+/* Especificidad: 003 */
+form>fieldset>fieldset {
+    border: none;
+    margin-top: 1em;
+    padding: 0;
+}
+
+/* Especificidad: 002 */
+form>button {
+    align-self: center;
+    margin-top: 1em;
+}
+
+/* Tabletas */
+@media (max-width: 1024px) {
+    /* Especificidad: 002 */
+    body>header {
+        flex-direction: column;
+    }
+
+    /* Especificidad: 003 */
+    body>header>nav {
+        justify-content: space-evenly;
+        align-self: stretch;
+    }
+
+    /* Especificidad: 003 */
+    body>header+nav {
+        display: none;
+    }
+
+    /* Especificidad: 003 */
+    section:has(article + article) {
+        grid-template-columns: repeat(2, 1fr);/*ADVERTENCIA: redefinición de la propiedad con valor original repeat(4, 1fr) */
+    }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    /* Especificidad: 003 */
+    body>header>nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Especificidad: 003 */
+    section:has(article + article) {
+        grid-template-columns: 1fr;/*ADVERTENCIA: redefinición de la propiedad con valor original repeat(2, 1fr) */
+    }
 }
