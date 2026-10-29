@@ -47,6 +47,7 @@ body>header>nav>a {
 /* Especificidad: 003 */
 body>header+nav {
     grid-area: migas;
+    padding: 0 1em;
 }
 
 /* Especificidad: 002 */

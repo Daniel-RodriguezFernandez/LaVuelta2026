@@ -49,7 +49,7 @@ footer a {
     text-decoration: none;
 }
 
-/* Especificidad: 001 (para h2, h3, h4, h5, h6) */
+/* Especificidad: 001, 001, 001, 001, 001 */
 h2,
 h3,
 h4,
