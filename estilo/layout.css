@@ -148,7 +148,7 @@ form>fieldset>fieldset {
 /* Especificidad: 002 */
 form>button {
     align-self: center;
-    margin-top: 1em;
+    margin: 1em 0;
 }
 
 /* Tabletas */
