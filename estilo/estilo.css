@@ -118,3 +118,35 @@ section:has(picture)>ul>li:first-child,
 section:has(picture)>ul>li:nth-child(4) {
     font-weight: bold;
 }
+/* Especificidad: 001 */
+button {
+    font-family: inherit;
+    font-size: 1em;
+    color: var(--color-blanco);
+    background-color: var(--color-principal);
+    border: 0.1em solid var(--color-principal);
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+/* Especificidad: 011, 011 */
+button:hover,
+button:focus {
+    color: var(--color-principal);/*ADVERTENCIA: redefinición de la propiedad con valor original --color-blanco */
+    background-color: var(--color-secundario);/*ADVERTENCIA: redefinición de la propiedad con valor original --color-principal */
+}
+
+/* Especificidad: 002 */
+header>button {
+    font-size: 1.5em;/*ADVERTENCIA: redefinición de la propiedad con valor original 1em */
+    line-height: 1;
+    border-color: var(--color-blanco);/*ADVERTENCIA: redefinición de la propiedad con valor original --color-principal */
+    padding: 0.2em 0.5em;/*ADVERTENCIA: redefinición de la propiedad con valor original 0.5em 1em */
+}
+
+/* Especificidad: 012 */
+header>button[aria-expanded="true"] {
+    color: var(--color-principal);/*ADVERTENCIA: redefinición de la propiedad con valor original --color-blanco */
+    background-color: var(--color-secundario);/*ADVERTENCIA: redefinición de la propiedad con valor original --color-principal */
+}

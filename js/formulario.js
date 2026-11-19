@@ -117,4 +117,4 @@ class Formulario {
   }
 }
 
-new Formulario();
+const formulario = new Formulario();

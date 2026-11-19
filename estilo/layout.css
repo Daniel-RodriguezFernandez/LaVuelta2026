@@ -44,6 +44,11 @@ body>header>nav>a {
     padding: 0.5em 0.8em;
 }
 
+/* Especificidad: 002 */
+header>button {
+    display: none;
+}
+
 /* Especificidad: 003 */
 body>header+nav {
     grid-area: migas;
@@ -95,6 +100,8 @@ section:has(video) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 1em;
+    margin-bottom: 2em;
 }
 
 /* Especificidad: 003, 003 */
@@ -160,8 +167,22 @@ form>button {
 
     /* Especificidad: 003 */
     body>header>nav {
+        display: none;/*ADVERTENCIA: redefinición de la propiedad con valor original flex */
         justify-content: space-evenly;
         align-self: stretch;
+    }
+
+    /* Especificidad: 002 */
+    header>button {
+        display: block;/*ADVERTENCIA: redefinición de la propiedad con valor original none */
+        margin-bottom: 1em;
+    }
+
+    /* Especificidad: 011 */
+    nav.abierto {
+        display: flex;/*ADVERTENCIA: redefinición de la propiedad con valor original none */
+        flex-direction: column;
+        gap: 1em;/*ADVERTENCIA: redefinición de la propiedad con valor original 0.3em */
     }
 
     /* Especificidad: 003 */
@@ -181,6 +202,19 @@ form>button {
     body>header>nav {
         flex-direction: column;
         align-items: center;
+    }
+
+    /* Especificidad: 002 */
+    header>button {
+        display: block;/*ADVERTENCIA: redefinición de la propiedad con valor original block */
+        margin-bottom: 0.5em;/*ADVERTENCIA: redefinición de la propiedad con valor original 1em */
+    }
+
+    /* Especificidad: 011 */
+    nav.abierto {
+        display: flex;/*ADVERTENCIA: redefinición de la propiedad con valor original flex */
+        flex-direction: column;/*ADVERTENCIA: redefinición de la propiedad con valor original column */
+        gap: 1em;/*ADVERTENCIA: redefinición de la propiedad con valor original 1em */
     }
 
     /* Especificidad: 003 */
