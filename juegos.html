@@ -1,27 +1,19 @@
-<!doctype html>
+<!DOCTYPE HTML>
 
 <html lang="es">
   <head>
-    <!-- Datos que describen el documento -->
     <meta charset="UTF-8" />
     <title>LaVuelta2026: Juegos</title>
-
     <meta name="author" content="Daniel Rodríguez Fernández" />
-    <meta
-      name="description"
-      content="Documento juegos del proyecto LaVuelta2026"
-    />
-
+    <meta name="description" content="Documento juegos del proyecto LaVuelta2026" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--Enlace a las hojas de estilo-->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-    <script src="js/menu.js" defer></script>
-
-    <!--Favicon del proyecto-->
     <link rel="icon" type="image/x-icon" href="multimedia/favicon.ico" />
-    
+
+    <script src="js/menu.js" defer></script>
+    <script src="js/buscador.js" defer></script>
     <script src="js/formulario.js" defer></script>
   </head>
 
@@ -69,6 +61,10 @@
         >
       </nav>
     </header>
+    <search aria-label="Buscador">
+        <label for="busqueda"><img src="multimedia/buscador.png" alt="icono lupa" /></label>
+        <input type="search" id="busqueda" aria-label="Buscar" placeholder="Buscar..." />
+    </search>
     <nav aria-label="migas">
       <ol>
         <li>
@@ -82,16 +78,10 @@
     </nav>
     <main>
       <h2>Juegos</h2>
-      <!-- contenido de juegos.html  -->
       <h3>¿Conoces la etapa?</h3>
       <p>
-        Pon a prueba tus conocimientos sobre la etapa Almuñécar a Loja de
-        LaVuelta2026. El juego consta de 10 preguntas sobre la información de la
-        etapa. Puedes consultar toda la información necesaria para responderlas
-        en la página
-        <a href="etapa.html" title="Información sobre una etapa de LaVuelta2026"
-          >Etapa</a
-        >.
+        Pon a prueba tu conocimiento sobre la ruta de la etapa Almuñécar a Loja
+        de LaVuelta2026 respondiendo a estas 10 preguntas.
       </p>
 
       <form>

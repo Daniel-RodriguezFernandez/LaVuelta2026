@@ -16,10 +16,11 @@ body {
     display: grid;
     grid-template-areas:
         "cabecera"
+        "buscador"
         "migas"
         "contenido"
         "pie";
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto auto auto 1fr auto;
 }
 
 /* Especificidad: 002 */
@@ -49,8 +50,20 @@ header>button {
     display: none;
 }
 
+/* Especificidad: 002 */
+body>search {
+    grid-area: buscador;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.3em 0.6em;
+    margin: 0.5em 1em;
+    border: 0.1em solid;
+}
+
 /* Especificidad: 003 */
-body>header+nav {
+body>search+nav {
     grid-area: migas;
     padding: 0 1em;
 }
@@ -186,7 +199,7 @@ form>button {
     }
 
     /* Especificidad: 003 */
-    body>header+nav {
+    body>search+nav {
         display: none;
     }
 

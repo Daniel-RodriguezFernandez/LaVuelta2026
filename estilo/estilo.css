@@ -16,6 +16,8 @@
    Color secundario AZUL HIELO #E8F1FB se puede combinar con:
        o Color negro      - Contraste de 18.41:1 (AAA)
        o Color principal  - Contraste de 9.87:1 (AAA)
+   Color resaltado AMARILLO #FFFF00 (búsquedas) se puede combinar con:
+       o Color negro      - Contraste de 19.56:1 (AAA)
    Color blanco #FFFFFF
    Color negro #000000
 */
@@ -26,6 +28,7 @@
     --color-secundario: #E8F1FB;
     --color-negro: #000000;
     --color-blanco: #FFFFFF;
+    --color-resaltado: #FFFF00;
 }
 
 /* Especificidad: 001 */
@@ -90,19 +93,19 @@ header nav a[aria-current="page"] {
 }
 
 /* Especificidad: 003 */
-header+nav>ol {
+search+nav>ol {
     list-style: none;
     font-size: 0.8em;
     padding-left: 0;
 }
 
 /* Especificidad: 004 */
-header+nav>ol>li {
+search+nav>ol>li {
     display: inline;
 }
 
 /* Especificidad: 014 */
-header+nav>ol>li:last-child {
+search+nav>ol>li:last-child {
     font-weight: bold;
 }
 
@@ -149,4 +152,21 @@ header>button {
 header>button[aria-expanded="true"] {
     color: var(--color-principal);/*ADVERTENCIA: redefinición de la propiedad con valor original --color-blanco */
     background-color: var(--color-secundario);/*ADVERTENCIA: redefinición de la propiedad con valor original --color-principal */
+}
+
+/* Especificidad: 011 */
+input[type="search"] {
+    border: none;
+}
+
+/* Especificidad: 002 */
+search img {
+    display: block;
+    cursor: pointer;
+}
+
+/* Especificidad: 001 */
+mark {
+    color: var(--color-negro);
+    background-color: var(--color-resaltado);
 }

@@ -2,22 +2,18 @@
 
 <html lang="es">
 <head>
-    <!-- Datos que describen el documento -->
     <meta charset="UTF-8" />
     <title>LaVuelta2026: Clasificaciones</title>
-
     <meta name="author" content="Daniel Rodríguez Fernández" />
     <meta name="description" content="Documento clasificaciones del proyecto LaVuelta2026" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
-
-    <!--Enlace a las hojas de estilo-->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-    <script src="js/menu.js" defer></script>
-
-    <!--Favicon del proyecto-->
     <link rel="icon" type="image/x-icon" href="multimedia/favicon.ico" />
+
+    <script src="js/menu.js" defer></script>
+    <script src="js/buscador.js" defer></script>
 </head>
 
 <body>
@@ -35,6 +31,10 @@
             <a href="ayuda.html" title="Ayuda sobre el uso del sitio web LaVuelta2026">Ayuda</a>
         </nav>
     </header>
+    <search aria-label="Buscador">
+        <label for="busqueda"><img src="multimedia/buscador.png" alt="icono lupa" /></label>
+        <input type="search" id="busqueda" aria-label="Buscar" placeholder="Buscar..." />
+    </search>
     <nav aria-label="migas">
         <ol>
             <li><a href="index.html" title="Página de inicio de LaVuelta2026">Inicio</a></li>
@@ -44,7 +44,6 @@
     </nav>
     <main>
         <h2>Clasificaciones</h2>
-       <!-- contenido de clasificaciones.html  -->
     </main>
 
     <footer>
@@ -54,4 +53,4 @@
         </address>
     </footer>
 </body>
-</html>
+</html>

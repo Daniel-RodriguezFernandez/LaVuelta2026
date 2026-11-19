@@ -2,22 +2,18 @@
 
 <html lang="es">
 <head>
-    <!-- Datos que describen el documento -->
     <meta charset="UTF-8" />
-    <title>LaVuelta2026:Ayuda</title>
-
+    <title>LaVuelta2026: Ayuda</title>
     <meta name="author" content="Daniel Rodríguez Fernández" />
     <meta name="description" content="Documento ayuda del proyecto LaVuelta2026" />
-   
-    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--Enlace a las hojas de estilo-->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-    <script src="js/menu.js" defer></script>
-
-    <!--Favicon del proyecto-->
     <link rel="icon" type="image/x-icon" href="multimedia/favicon.ico" />
+
+    <script src="js/menu.js" defer></script>
+    <script src="js/buscador.js" defer></script>
 </head>
 
 <body>
@@ -35,6 +31,10 @@
             <a href="ayuda.html" aria-current="page" title="Ayuda sobre el uso del sitio web LaVuelta2026">Ayuda</a>
         </nav>
     </header>
+    <search aria-label="Buscador">
+        <label for="busqueda"><img src="multimedia/buscador.png" alt="icono lupa" /></label>
+        <input type="search" id="busqueda" aria-label="Buscar" placeholder="Buscar..." />
+    </search>
     <nav aria-label="migas">
         <ol>
             <li><a href="index.html" title="Página de inicio de LaVuelta2026">Inicio</a></li>
@@ -50,11 +50,11 @@
         </section>
         <section>
             <h3>Ciclista</h3>
-            <p>Muestra la información del ciclista Timo Roosen. En el apartado "Datos personales" aparecen su nombre completo, su fecha de nacimiento, su país de nacimiento, su equipo y su dorsal, junto a una fotografía del ciclista que se adapta al tamaño de la pantalla del dispositivo (móvil, tablet u ordenador). El apartado "Datos equipos" recoge los equipos en los que ha corrido a lo largo de su carrera y el apartado "Temporada 2025" muestra una tabla con sus resultados de esa temporada: carreras disputadas, días de competición, kilómetros recorridos, victorias, podios, abandonos y clasificaciones en La Vuelta 2025. Por último, el apartado "Multimedia" contiene un enlace a la página del equipo Team Picnic PostNL en La Vuelta, el vídeo de presentación del equipo y un audio con la historia del equipo.</p>
+            <p>Muestra la información del ciclista Timo Roosen. En el apartado "Datos personales" aparecen su nombre completo, su fecha de nacimiento, su país, su equipo y su dorsal, junto a una fotografía del ciclista que se adapta al tamaño de la pantalla del dispositivo (móvil, tableta u ordenador). El apartado "Datos equipos" recoge los equipos en los que ha corrido a lo largo de su carrera y el apartado "Temporada 2025" muestra una tabla con sus resultados de esa temporada: carreras disputadas, días de competición, kilómetros recorridos, podios, abandonos y sus puestos en las clasificaciones general y por puntos de La Vuelta 2025. Por último, el apartado "Multimedia" contiene un enlace a la página del equipo Team Picnic PostNL en La Vuelta, el vídeo de presentación del equipo y un audio con su historia.</p>
         </section>
         <section>
             <h3>Equipo</h3>
-            <p>Presenta al equipo Team Picnic PostNL. El apartado "Alineación de corredores" contiene ocho tarjetas, una por cada corredor del equipo, con su nombre y apellidos, un icono de ciclista, su dorsal, su fecha de nacimiento y su nacionalidad. Por ahora las tarjetas contienen datos provisionales que se sustituirán por los datos reales de los corredores.</p>
+            <p>Presenta al equipo Team Picnic PostNL: su nombre y código UCI, su país, su director deportivo, su categoría y un enlace a la página web oficial del equipo. El apartado "Alineación de corredores" muestra a los ocho corredores que el equipo presenta en La Vuelta 2026, ordenados por dorsal. Cada corredor aparece en una tarjeta con su nombre y apellidos, un icono de ciclista, su dorsal, su fecha de nacimiento y su nacionalidad. Estos datos se cargan automáticamente al abrir la página.</p>
         </section>
         <section>
             <h3>Etapa</h3>
@@ -62,7 +62,7 @@
         </section>
         <section>
             <h3>Meteorología</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Muestra información sobre Almuñécar (España), la localidad de salida de la etapa Almuñécar a Loja: su número de habitantes, su gentilicio y sus coordenadas geográficas. Estos datos se generan automáticamente al abrir la página.</p>
         </section>
         <section>
             <h3>Clasificaciones</h3>
@@ -70,13 +70,12 @@
         </section>
         <section>
             <h3>Juegos</h3>
-            <p>Contiene el juego "¿Conoces la etapa?", un cuestionario de 10 preguntas sobre la etapa Almuñécar a Loja: número y fecha de la etapa, lugares de salida y llegada, tipo de etapa, hitos del recorrido, valoración de su dureza, longitud, desnivel acumulado y una breve descripción. Para participar se indica el nombre y se envían las respuestas con el botón "Enviar respuestas". Toda la información necesaria para responder se encuentra en la página Etapa.</p>
+            <p>Contiene el juego "¿Conoces la etapa?", un cuestionario de 10 preguntas sobre la etapa Almuñécar a Loja: número y fecha de la etapa, lugares de salida y llegada, tipo de etapa, hitos del recorrido, valoración de su dureza, longitud, desnivel acumulado y una breve descripción. Escribe tu nombre al final del formulario y pulsa "Enviar respuestas": debajo del formulario aparecerá un mensaje con tu nombre, los puntos obtenidos por las respuestas acertadas, la dureza que has asignado a la etapa y tu descripción. La valoración de la dureza y la descripción no puntúan.</p>
         </section>
         <section>
             <h3>Ayuda</h3>
             <p>Este documento te ayuda a utilizar el sitio web LaVuelta2026. Aquí encontrarás una explicación de cada una de las secciones del menú de navegación, para que sepas qué información ofrece cada página y cómo moverte por el sitio de forma sencilla.</p>
         </section>
-       <!-- contenido de ayuda.html  -->
     </main>
 
     <footer>
@@ -86,4 +85,4 @@
         </address>
     </footer>
 </body>
-</html>
+</html>
