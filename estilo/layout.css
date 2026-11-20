@@ -234,4 +234,10 @@ form>button {
     section:has(article + article) {
         grid-template-columns: 1fr;/*ADVERTENCIA: redefinición de la propiedad con valor original repeat(2, 1fr) */
     }
+
+    /* Especificidad: 003 */
+    article h2+img {
+        width: 100%;
+        height: auto;
+    }
 }

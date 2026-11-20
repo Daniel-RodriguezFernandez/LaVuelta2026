@@ -5,6 +5,7 @@ class Formulario {
   #dureza;
   #descripcion;
   #usuario;
+  #resultado;
 
   constructor() {
     this.#puntuacion = 0;
@@ -112,8 +113,13 @@ class Formulario {
       `la dureza que has asignado a la etapa es ${this.#dureza} ` +
       `y tu descripción ${this.#descripcion}`;
 
-    const form = document.querySelector("main form");
-    form.insertAdjacentElement("afterend", parrafo);
+    if (this.#resultado) {
+      this.#resultado.replaceWith(parrafo);
+    } else {
+      const form = document.querySelector("main form");
+      form.insertAdjacentElement("afterend", parrafo);
+    }
+    this.#resultado = parrafo;
   }
 }
 
